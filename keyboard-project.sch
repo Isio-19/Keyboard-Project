@@ -1,4 +1,384 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:keyboard-project-cache
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U?
+U 1 1 66C0CD40
+P 2450 2750
+F 0 "U?" H 2450 861 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2450 770 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2450 2750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2450 2750 50  0001 C CNN
+	1    2450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 66C12ABC
+P 2350 800
+F 0 "#PWR?" H 2350 650 50  0001 C CNN
+F 1 "+5V" H 2365 973 50  0000 C CNN
+F 2 "" H 2350 800 50  0001 C CNN
+F 3 "" H 2350 800 50  0001 C CNN
+	1    2350 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 950  2450 950 
+Wire Wire Line
+	2450 950  2350 950 
+Connection ~ 2450 950 
+Wire Wire Line
+	2350 950  2350 800 
+Connection ~ 2350 950 
+$Comp
+L power:GND #PWR?
+U 1 1 66C1858D
+P 2000 4550
+F 0 "#PWR?" H 2000 4300 50  0001 C CNN
+F 1 "GND" H 2005 4377 50  0000 C CNN
+F 2 "" H 2000 4550 50  0001 C CNN
+F 3 "" H 2000 4550 50  0001 C CNN
+	1    2000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4550 2350 4550
+Connection ~ 2350 4550
+Wire Wire Line
+	2350 4550 2450 4550
+$Comp
+L Device:R_Small R?
+U 1 1 66C1C107
+P 3700 3350
+F 0 "R?" V 3504 3350 50  0000 C CNN
+F 1 "10k" V 3595 3350 50  0000 C CNN
+F 2 "" H 3700 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 66C1FF35
+P 4050 3350
+F 0 "#PWR?" H 4050 3100 50  0001 C CNN
+F 1 "GND" H 4055 3177 50  0000 C CNN
+F 2 "" H 4050 3350 50  0001 C CNN
+F 3 "" H 4050 3350 50  0001 C CNN
+	1    4050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3350 3600 3350
+Wire Wire Line
+	3800 3350 4050 3350
+$Comp
+L Device:R_Small R?
+U 1 1 66C2102E
+P 1500 2250
+F 0 "R?" V 1304 2250 50  0000 C CNN
+F 1 "22" V 1395 2250 50  0000 C CNN
+F 2 "" H 1500 2250 50  0001 C CNN
+F 3 "~" H 1500 2250 50  0001 C CNN
+	1    1500 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 66C216C7
+P 1200 2350
+F 0 "R?" V 1396 2350 50  0000 C CNN
+F 1 "22" V 1305 2350 50  0000 C CNN
+F 2 "" H 1200 2350 50  0001 C CNN
+F 3 "~" H 1200 2350 50  0001 C CNN
+	1    1200 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 2350 1850 2350
+Wire Wire Line
+	1850 2250 1600 2250
+$Comp
+L Device:C_Small C?
+U 1 1 66C2EF07
+P 1600 2650
+F 0 "C?" H 1692 2696 50  0000 L CNN
+F 1 "1uF" H 1692 2605 50  0000 L CNN
+F 2 "" H 1600 2650 50  0001 C CNN
+F 3 "~" H 1600 2650 50  0001 C CNN
+	1    1600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2550 1850 2550
+$Comp
+L power:+5V #PWR?
+U 1 1 66C31BC1
+P 4350 3800
+F 0 "#PWR?" H 4350 3650 50  0001 C CNN
+F 1 "+5V" H 4365 3973 50  0000 C CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 66C323F5
+P 4350 4300
+F 0 "#PWR?" H 4350 4050 50  0001 C CNN
+F 1 "GND" H 4355 4127 50  0000 C CNN
+F 2 "" H 4350 4300 50  0001 C CNN
+F 3 "" H 4350 4300 50  0001 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 66C332C5
+P 4600 4050
+F 0 "C?" H 4692 4096 50  0000 L CNN
+F 1 "C_Small" H 4692 4005 50  0000 L CNN
+F 2 "" H 4600 4050 50  0001 C CNN
+F 3 "~" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 66C337C9
+P 5100 4050
+F 0 "C?" H 5192 4096 50  0000 L CNN
+F 1 "C_Small" H 5192 4005 50  0000 L CNN
+F 2 "" H 5100 4050 50  0001 C CNN
+F 3 "~" H 5100 4050 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 66C3E620
+P 4100 4050
+F 0 "C?" H 4192 4096 50  0000 L CNN
+F 1 "C_Small" H 4192 4005 50  0000 L CNN
+F 2 "" H 4100 4050 50  0001 C CNN
+F 3 "~" H 4100 4050 50  0001 C CNN
+	1    4100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 66C3EB2C
+P 3600 4050
+F 0 "C?" H 3692 4096 50  0000 L CNN
+F 1 "C_Small" H 3692 4005 50  0000 L CNN
+F 2 "" H 3600 4050 50  0001 C CNN
+F 3 "~" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4150 4100 4150
+Wire Wire Line
+	4100 4150 4350 4150
+Connection ~ 4100 4150
+Wire Wire Line
+	4600 4150 5100 4150
+Connection ~ 4600 4150
+Wire Wire Line
+	5100 3950 4600 3950
+Wire Wire Line
+	4600 3950 4350 3950
+Connection ~ 4600 3950
+Wire Wire Line
+	4100 3950 3600 3950
+Connection ~ 4100 3950
+Wire Wire Line
+	4350 3800 4350 3950
+Connection ~ 4350 3950
+Wire Wire Line
+	4350 3950 4100 3950
+Wire Wire Line
+	4350 4150 4350 4300
+Connection ~ 4350 4150
+Wire Wire Line
+	4350 4150 4600 4150
+$Comp
+L power:+5V #PWR?
+U 1 1 66C41FE9
+P 1700 2050
+F 0 "#PWR?" H 1700 1900 50  0001 C CNN
+F 1 "+5V" H 1715 2223 50  0000 C CNN
+F 2 "" H 1700 2050 50  0001 C CNN
+F 3 "" H 1700 2050 50  0001 C CNN
+	1    1700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2050 1850 2050
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 66C4AFB7
+P 1300 1550
+F 0 "Y?" V 1254 1694 50  0000 L CNN
+F 1 "16MHz" V 1345 1694 50  0000 L CNN
+F 2 "" H 1300 1550 50  0001 C CNN
+F 3 "~" H 1300 1550 50  0001 C CNN
+	1    1300 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1450 1850 1450
+$Comp
+L Device:C_Small C?
+U 1 1 66C522CD
+P 900 1350
+F 0 "C?" V 1129 1350 50  0000 C CNN
+F 1 "22pF" V 1038 1350 50  0000 C CNN
+F 2 "" H 900 1350 50  0001 C CNN
+F 3 "~" H 900 1350 50  0001 C CNN
+	1    900  1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 66C52D96
+P 800 1950
+F 0 "#PWR?" H 800 1700 50  0001 C CNN
+F 1 "GND" H 805 1777 50  0000 C CNN
+F 2 "" H 800 1950 50  0001 C CNN
+F 3 "" H 800 1950 50  0001 C CNN
+	1    800  1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1450 1000 1450
+Wire Wire Line
+	1000 1450 1000 1350
+Connection ~ 1300 1450
+$Comp
+L Device:C_Small C?
+U 1 1 66C58357
+P 900 1700
+F 0 "C?" V 1129 1700 50  0000 C CNN
+F 1 "22pF" V 1038 1700 50  0000 C CNN
+F 2 "" H 900 1700 50  0001 C CNN
+F 3 "~" H 900 1700 50  0001 C CNN
+	1    900  1700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 800  1700
+Wire Wire Line
+	800  1350 800  1700
+Wire Wire Line
+	1300 1650 1850 1650
+Wire Wire Line
+	800  1700 800  1850
+Wire Wire Line
+	1200 1850 800  1850
+Connection ~ 800  1850
+Wire Wire Line
+	800  1850 800  1950
+Wire Wire Line
+	1400 1550 1400 1850
+Wire Wire Line
+	1400 1850 1200 1850
+Connection ~ 1200 1850
+Wire Wire Line
+	1200 1550 1200 1850
+Wire Wire Line
+	1000 1700 1000 1650
+Wire Wire Line
+	1000 1650 1300 1650
+Connection ~ 1300 1650
+$Comp
+L Switch:SW_Push SW?
+U 1 1 66C682E9
+P 1500 1250
+F 0 "SW?" H 1500 1535 50  0000 C CNN
+F 1 "SW_Push" H 1500 1444 50  0000 C CNN
+F 2 "" H 1500 1450 50  0001 C CNN
+F 3 "~" H 1500 1450 50  0001 C CNN
+	1    1500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 66C6A0AF
+P 1150 1250
+F 0 "#PWR?" H 1150 1000 50  0001 C CNN
+F 1 "GND" H 1155 1077 50  0000 C CNN
+F 2 "" H 1150 1250 50  0001 C CNN
+F 3 "" H 1150 1250 50  0001 C CNN
+	1    1150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1250 1300 1250
+$Comp
+L Device:R_Small R?
+U 1 1 66C24C18
+P 1750 1050
+F 0 "R?" H 1809 1096 50  0000 L CNN
+F 1 "10k" H 1809 1005 50  0000 L CNN
+F 2 "" H 1750 1050 50  0001 C CNN
+F 3 "~" H 1750 1050 50  0001 C CNN
+	1    1750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1250 1750 1250
+Wire Wire Line
+	1750 1150 1750 1250
+Connection ~ 1750 1250
+Wire Wire Line
+	1750 1250 1850 1250
+$Comp
+L power:+5V #PWR?
+U 1 1 66C268D9
+P 1750 850
+F 0 "#PWR?" H 1750 700 50  0001 C CNN
+F 1 "+5V" H 1765 1023 50  0000 C CNN
+F 2 "" H 1750 850 50  0001 C CNN
+F 3 "" H 1750 850 50  0001 C CNN
+	1    1750 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 850  1750 950 
+Text GLabel 850  2250 0    50   Input ~ 0
+D+
+Text GLabel 850  2350 0    50   Input ~ 0
+D-
+Wire Wire Line
+	850  2350 1100 2350
+Wire Wire Line
+	850  2250 1400 2250
+$Comp
+L power:GND #PWR?
+U 1 1 66C314BB
+P 1600 2850
+F 0 "#PWR?" H 1600 2600 50  0001 C CNN
+F 1 "GND" H 1605 2677 50  0000 C CNN
+F 2 "" H 1600 2850 50  0001 C CNN
+F 3 "" H 1600 2850 50  0001 C CNN
+	1    1600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2750 1600 2850
 $EndSCHEMATC
