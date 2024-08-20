@@ -2477,8 +2477,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 3500 7050 3500
 Wire Wire Line
-	7850 900  7850 1750
-Wire Wire Line
 	1550 3100 1550 3750
 Connection ~ 1550 3100
 Wire Wire Line
@@ -2525,4 +2523,57 @@ Wire Wire Line
 Connection ~ 6950 2400
 Wire Wire Line
 	6950 2400 6950 3750
+Wire Wire Line
+	7850 900  7850 1100
+$Comp
+L Device:Rotary_Encoder_Switch SW84
+U 1 1 66DAE7E9
+P 8450 1200
+F 0 "SW84" H 8450 1567 50  0000 C CNN
+F 1 "Knob" H 8450 1476 50  0000 C CNN
+F 2 "" H 8300 1360 50  0001 C CNN
+F 3 "~" H 8450 1460 50  0001 C CNN
+	1    8450 1200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 8750 1100 2    50   Input ~ 0
+Rot_0
+Text GLabel 8750 1300 2    50   Input ~ 0
+Rot_1
+Wire Wire Line
+	8750 1200 9100 1200
+Wire Wire Line
+	9100 1200 9100 1250
+$Comp
+L power:GND #PWR?
+U 1 1 66DD54F4
+P 9100 1250
+F 0 "#PWR?" H 9100 1000 50  0001 C CNN
+F 1 "GND" H 9105 1077 50  0000 C CNN
+F 2 "" H 9100 1250 50  0001 C CNN
+F 3 "" H 9100 1250 50  0001 C CNN
+	1    9100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1100 8150 1100
+$Comp
+L Device:D_Small D84
+U 1 1 66DEA2AC
+P 8000 1400
+F 0 "D84" V 8046 1332 50  0000 R CNN
+F 1 "D_Small" V 7955 1332 50  0000 R CNN
+F 2 "" V 8000 1400 50  0001 C CNN
+F 3 "~" V 8000 1400 50  0001 C CNN
+	1    8000 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 1500 8000 1500
+Connection ~ 7050 1500
+Connection ~ 7850 1100
+Wire Wire Line
+	7850 1100 7850 1750
+Wire Wire Line
+	8000 1300 8150 1300
 $EndSCHEMATC
