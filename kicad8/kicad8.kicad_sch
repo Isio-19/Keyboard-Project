@@ -4180,6 +4180,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 48.26) (xy 64.135 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fd086d3-3fec-4ff1-9d1e-a2c0b8903bad")
+	)
+	(wire
+		(pts
 			(xy 60.96 86.36) (xy 64.135 86.36)
 		)
 		(stroke
@@ -4240,23 +4250,13 @@
 	)
 	(wire
 		(pts
-			(xy 60.325 48.26) (xy 64.135 48.26)
+			(xy 60.96 50.8) (xy 64.135 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "939b525b-e67d-46db-876b-f8fbb5ff86fe")
-	)
-	(wire
-		(pts
-			(xy 60.325 50.8) (xy 64.135 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94972740-a3c8-46e8-9a32-d2503cdad54f")
+		(uuid "930bb152-87f9-4f8d-8f2c-ff208a0d6542")
 	)
 	(wire
 		(pts
@@ -5454,7 +5454,7 @@
 		(uuid "7201c2ea-aae4-49cc-9549-35cc6c32aa07")
 	)
 	(label "C14"
-		(at 60.325 50.8 180)
+		(at 60.96 50.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5597,7 +5597,7 @@
 		(uuid "d565750f-fa80-4cca-acfe-b72a117f8655")
 	)
 	(label "C13"
-		(at 60.325 48.26 180)
+		(at 60.96 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6335,44 +6335,44 @@
 	)
 	(global_label "rot1"
 		(shape input)
-		(at 215.9 102.87 0)
+		(at 60.96 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f066d929-e962-4cc6-a77e-560fa390f1d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.7556 102.87 0)
+			(at 54.1044 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "rot0"
 		(shape input)
-		(at 215.9 99.06 0)
+		(at 60.96 50.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f3813d6b-3558-47e9-a0d5-f234eb811d12")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.7556 99.06 0)
+			(at 54.1044 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
