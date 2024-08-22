@@ -600,6 +600,14 @@
     [
       "2b97a220-2f1a-429f-8815-0fa3b3b8491d",
       "matrix"
+    ],
+    [
+      "5ce6faf6-3b88-47dd-8c67-c3e84c0ecbb7",
+      "RGB_UL"
+    ],
+    [
+      "7638bbfc-5c02-4928-8821-3938de956d68",
+      "RGB_Switch"
     ]
   ],
   "text_variables": {}
