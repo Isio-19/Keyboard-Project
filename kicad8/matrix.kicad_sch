@@ -170,30 +170,32 @@
 				)
 			)
 		)
-		(symbol "Device:RotaryEncoder_Switch"
+		(symbol "Device:Q_PMOS_GSD"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 6.604 0)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "RotaryEncoder_Switch"
-				(at 0 -6.604 0)
+			(property "Value" "Q_PMOS_GSD"
+				(at 5.08 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at -3.81 4.064 0)
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -202,15 +204,6 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 6.604 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -219,7 +212,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "rotary switch encoder switch push button"
+			(property "Description" "P-MOSFET transistor, gate/source/drain"
 				(at 0 0 0)
 				(effects
 					(font
@@ -228,7 +221,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "RotaryEncoder*Switch*"
+			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -237,20 +230,152 @@
 					(hide yes)
 				)
 			)
-			(symbol "RotaryEncoder_Switch_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
+			(symbol "Q_PMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(circle
-					(center -3.81 0)
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
 					(radius 0.254)
 					(stroke
 						(width 0)
@@ -261,200 +386,150 @@
 					)
 				)
 				(circle
-					(center -0.381 0)
-					(radius 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.381 2.667)
-					(mid -3.0988 -0.0635)
-					(end -0.381 -2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -1.778) (xy -0.635 1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.381 -1.778) (xy -0.381 1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 1.778) (xy -0.127 -1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0) (xy 3.429 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 1.016) (xy 3.81 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
-					)
+					(center 2.54 1.778)
+					(radius 0.254)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
+			)
+			(symbol "Q_PMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
-				(polyline
-					(pts
-						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
+			)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(justify left)
 				)
-				(circle
-					(center 4.318 -1.016)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type none)
-					)
+					(justify left)
 				)
-				(circle
-					(center 4.318 1.016)
-					(radius 0.127)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
 					(stroke
-						(width 0.254)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -462,18 +537,18 @@
 					)
 				)
 			)
-			(symbol "RotaryEncoder_Switch_1_1"
+			(symbol "R_Small_1_1"
 				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "A"
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -482,70 +557,16 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "B"
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S2"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -616,6 +637,175 @@
 				)
 			)
 			(symbol "MX_SW_HS_CPG151101S11_0_1"
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PCM_marbastlib-mx:MX_SW_solder"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MX"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MX_SW_solder"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MX_SW_solder_0_1"
 				(circle
 					(center -1.1684 1.1684)
 					(radius 0.508)
@@ -909,6 +1099,363 @@
 				)
 			)
 		)
+		(symbol "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ROT_SKYLOONG_HS"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://skyloong.vip/products/abs-hot-swappable-knobs-madule"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SKYLOONG hotswap encoder module"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "hotswap encoder ec6 switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ROT_SKYLOONG_HS-Switch_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -0.381 0)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 2.667)
+					(mid -3.0988 -0.0635)
+					(end -0.381 -2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.778) (xy -0.635 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -1.778) (xy -0.381 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 1.778) (xy -0.127 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 3.81 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.302 -2.032) (xy -1.27 -4.064) (xy 2.54 -4.064) (xy 4.318 -2.032) (xy 4.318 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ROT_SKYLOONG_HS-Switch_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1005,12 +1552,144 @@
 				)
 			)
 		)
+		(symbol "power:VDD"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VDD"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VDD\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VDD_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDD_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 48.26 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0028371b-3da1-4a24-9899-648fc1c212b8")
 	)
 	(junction
 		(at 175.26 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "031291a5-a579-4096-8688-220c1060f954")
+	)
+	(junction
+		(at 184.15 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "047dde64-b9ab-4264-b5b1-78ea279f9e9d")
 	)
 	(junction
 		(at 53.34 67.31)
@@ -1097,12 +1776,6 @@
 		(uuid "1d1c84bd-6b6f-45d9-896a-b98f2748208a")
 	)
 	(junction
-		(at 200.66 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e3d2171-a18e-4c32-90df-a8b536c81d8c")
-	)
-	(junction
 		(at 137.16 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1139,10 +1812,10 @@
 		(uuid "2384fe74-5709-4628-a708-f7dcca36c9ad")
 	)
 	(junction
-		(at 187.96 39.37)
+		(at 200.66 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "26fe5b6b-98b0-4348-bfbb-0efc3cf9b260")
+		(uuid "246a944a-1fc3-47cb-bb95-f9d12f72504c")
 	)
 	(junction
 		(at 53.34 102.87)
@@ -1185,6 +1858,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f503693-61a4-4304-bedf-c4f16414ec58")
+	)
+	(junction
+		(at 204.47 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3007ddd8-75fe-4c82-9a90-65a75fe094f7")
 	)
 	(junction
 		(at 111.76 92.71)
@@ -1253,12 +1932,6 @@
 		(uuid "3cdb616b-7d1e-4afc-a240-4dcc298af235")
 	)
 	(junction
-		(at 200.66 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e9d1ad7-7de8-4f83-9bc0-8170c1145a65")
-	)
-	(junction
 		(at 154.94 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1323,6 +1996,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a28e4a8-4f4f-4521-9d9f-cb761ec13850")
+	)
+	(junction
+		(at 204.47 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a47d0f3-fa1e-4bda-ae32-bf63962ebafb")
 	)
 	(junction
 		(at 48.26 74.93)
@@ -1439,16 +2118,16 @@
 		(uuid "7eb15ea6-d1ba-4275-8998-d1cd410d3050")
 	)
 	(junction
-		(at 193.04 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7fac9e39-1460-45d7-a931-ca6248c1db7c")
-	)
-	(junction
 		(at 129.54 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ffc01b3-e4d4-40f5-8e77-1c2bbc1a51de")
+	)
+	(junction
+		(at 254 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81da3a14-af3e-4173-8aff-743ea6ef3575")
 	)
 	(junction
 		(at 104.14 67.31)
@@ -1487,16 +2166,16 @@
 		(uuid "919810fc-73eb-4303-b9b4-290232ecceff")
 	)
 	(junction
-		(at 35.56 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97e56b50-fa88-4137-abf0-67d4d7700928")
-	)
-	(junction
 		(at 78.74 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "987bd725-b404-4653-9bdd-a817fe5fbd57")
+	)
+	(junction
+		(at 35.56 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99e60746-4e66-4a75-8a0e-ee27abe68521")
 	)
 	(junction
 		(at 111.76 57.15)
@@ -1529,12 +2208,6 @@
 		(uuid "a5768482-51a3-408a-ae9c-ba6b25456e91")
 	)
 	(junction
-		(at 48.26 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5b5360d-5c5f-4f50-bd06-4820d6e76f43")
-	)
-	(junction
 		(at 48.26 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1553,16 +2226,22 @@
 		(uuid "a9ed9584-a0cd-4fa6-8e8a-989632950c39")
 	)
 	(junction
-		(at 193.04 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aa8c4e79-cd32-4d2c-af2a-eb0a0b0b5a8a")
-	)
-	(junction
 		(at 187.96 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "acb4c5c8-be83-4783-ae86-29d654dc37ae")
+	)
+	(junction
+		(at 199.39 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae2efb73-6a04-44a2-bdbe-6fb542f1353c")
+	)
+	(junction
+		(at 27.94 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2b4378b-66e5-4f85-bce3-7baf3069836a")
 	)
 	(junction
 		(at 73.66 39.37)
@@ -1707,6 +2386,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d25bd9f2-277c-4b48-8e10-8c0d44a63cd4")
+	)
+	(junction
+		(at 265.43 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3212fdd-6e06-4fa4-b31c-6307aa7ad536")
 	)
 	(junction
 		(at 53.34 31.75)
@@ -2020,16 +2705,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 39.37) (xy 187.96 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "123cabd5-3ed0-44cb-a61d-a74986943be2")
-	)
-	(wire
-		(pts
 			(xy 149.86 39.37) (xy 149.86 57.15)
 		)
 		(stroke
@@ -2100,6 +2775,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 50.8) (xy 180.34 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "181fe9cc-fdc2-49fd-b6a3-a17e83b2e051")
+	)
+	(wire
+		(pts
 			(xy 48.26 92.71) (xy 48.26 110.49)
 		)
 		(stroke
@@ -2120,6 +2805,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 53.34) (xy 187.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d6b9f28-6870-4915-8258-039056e6ac56")
+	)
+	(wire
+		(pts
 			(xy 187.96 93.98) (xy 189.23 93.98)
 		)
 		(stroke
@@ -2127,6 +2822,16 @@
 			(type default)
 		)
 		(uuid "1f3ee462-f52a-4518-b4ec-2cf6f2bee585")
+	)
+	(wire
+		(pts
+			(xy 10.16 74.93) (xy 22.86 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2041dacf-5a11-4beb-8f32-8f50370eab10")
 	)
 	(wire
 		(pts
@@ -2200,16 +2905,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 110.49) (xy 35.56 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c023cc7-ff7e-483f-bd55-41fb25591737")
-	)
-	(wire
-		(pts
 			(xy 66.04 102.87) (xy 78.74 102.87)
 		)
 		(stroke
@@ -2250,6 +2945,26 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 110.49) (xy 35.56 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30e1e23d-54be-42d3-b5d9-e7eac7f2da79")
+	)
+	(wire
+		(pts
+			(xy 191.77 49.53) (xy 184.15 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "319177d9-7c0b-46b5-918a-91f45b3e71f0")
+	)
+	(wire
+		(pts
 			(xy 162.56 92.71) (xy 162.56 110.49)
 		)
 		(stroke
@@ -2260,33 +2975,23 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 85.09) (xy 193.04 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36272ce0-46de-407c-8e91-5c750a0702ef")
-	)
-	(wire
-		(pts
 			(xy 200.66 74.93) (xy 200.66 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "36bcd58e-90e2-40d9-bac2-d19493061c29")
+		(uuid "337c8f1d-6591-41a8-9712-065d7d18dee4")
 	)
 	(wire
 		(pts
-			(xy 193.04 31.75) (xy 205.74 31.75)
+			(xy 167.64 85.09) (xy 184.15 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "37aba1ed-3248-414b-b1a7-8ed172e2bb21")
+		(uuid "36272ce0-46de-407c-8e91-5c750a0702ef")
 	)
 	(wire
 		(pts
@@ -2380,6 +3085,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 39.37) (xy 227.33 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41372cb9-3ac0-4bac-9305-0c64f54d98cd")
+	)
+	(wire
+		(pts
 			(xy 60.96 21.59) (xy 60.96 39.37)
 		)
 		(stroke
@@ -2410,6 +3125,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 57.15) (xy 200.66 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48b3ed44-fc59-4971-8f95-3126ebd1fc95")
+	)
+	(wire
+		(pts
 			(xy 137.16 57.15) (xy 137.16 74.93)
 		)
 		(stroke
@@ -2417,6 +3142,16 @@
 			(type default)
 		)
 		(uuid "49612d10-81b5-4de3-9406-ee9338a2bf1b")
+	)
+	(wire
+		(pts
+			(xy 199.39 39.37) (xy 199.39 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "497836bb-a69e-4f16-91f9-5044aed6831b")
 	)
 	(wire
 		(pts
@@ -2500,6 +3235,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 72.39) (xy 254 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56575dcc-c7f8-419f-b45b-cc9f60eac394")
+	)
+	(wire
+		(pts
 			(xy 187.96 111.76) (xy 187.96 127)
 		)
 		(stroke
@@ -2510,13 +3255,13 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 24.13) (xy 229.87 24.13)
+			(xy 15.24 80.01) (xy 27.94 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a471e9d-187d-417e-9b5b-68cd9f5a99bc")
+		(uuid "5aae89bd-4c59-4456-8204-2208f1769777")
 	)
 	(wire
 		(pts
@@ -2527,16 +3272,6 @@
 			(type default)
 		)
 		(uuid "5dd83315-88d7-41a0-9cbd-9b7b9909b0d3")
-	)
-	(wire
-		(pts
-			(xy 200.66 57.15) (xy 200.66 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e1c8bb2-bf58-4701-88bf-83dc88d2fff0")
 	)
 	(wire
 		(pts
@@ -2590,16 +3325,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 21.59) (xy 200.66 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67487b40-89c8-40da-90b2-1c5e3c692a8e")
-	)
-	(wire
-		(pts
 			(xy 91.44 49.53) (xy 104.14 49.53)
 		)
 		(stroke
@@ -2607,16 +3332,6 @@
 			(type default)
 		)
 		(uuid "68d65397-07f6-41e0-9c9b-5d8ffb0910e3")
-	)
-	(wire
-		(pts
-			(xy 48.26 110.49) (xy 48.26 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6972e86b-9127-42c6-b8e9-e74ffee79ae2")
 	)
 	(wire
 		(pts
@@ -2670,23 +3385,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 21.59) (xy 205.74 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7254998e-4352-46cf-b47d-138b293d79bc")
-	)
-	(wire
-		(pts
 			(xy 175.26 21.59) (xy 175.26 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "73c1d64b-0ca0-44d3-b543-c366c47e502f")
+		(uuid "723177a4-56c5-443a-88b5-a2ba280b41dd")
 	)
 	(wire
 		(pts
@@ -2710,16 +3415,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 49.53) (xy 193.04 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75b8f9ec-52e6-4a37-a7bb-2ab5fb125cd1")
-	)
-	(wire
-		(pts
 			(xy 129.54 102.87) (xy 142.24 102.87)
 		)
 		(stroke
@@ -2740,13 +3435,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 39.37) (xy 200.66 57.15)
+			(xy 204.47 50.8) (xy 204.47 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79894dba-4d1b-4c84-9f92-8b6c3c603521")
+		(uuid "7b1924d4-2fef-4f67-8a41-dab70c152782")
 	)
 	(wire
 		(pts
@@ -2770,6 +3465,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 85.09) (xy 193.04 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d387438-cda5-4f11-ad5c-e2e08cf7f5df")
+	)
+	(wire
+		(pts
 			(xy 175.26 57.15) (xy 175.26 92.71)
 		)
 		(stroke
@@ -2777,6 +3482,16 @@
 			(type default)
 		)
 		(uuid "7d97264a-c924-4066-b649-cb9ad275e1df")
+	)
+	(wire
+		(pts
+			(xy 254 66.04) (xy 254 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eeb12b4-e5bf-4543-b199-627e6df795a8")
 	)
 	(wire
 		(pts
@@ -2837,6 +3552,16 @@
 			(type default)
 		)
 		(uuid "87a2a468-f529-4567-bc2b-3e59bc04cd02")
+	)
+	(wire
+		(pts
+			(xy 204.47 44.45) (xy 215.9 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87eba7da-e2db-418d-afd5-5becfa7700e9")
 	)
 	(wire
 		(pts
@@ -2910,6 +3635,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 77.47) (xy 265.43 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f196e09-1b03-4b72-87c6-17bb74849c20")
+	)
+	(wire
+		(pts
 			(xy 35.56 74.93) (xy 35.56 92.71)
 		)
 		(stroke
@@ -2970,7 +3705,27 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 49.53) (xy 205.74 49.53)
+			(xy 184.15 49.53) (xy 184.15 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94b4ce34-2709-49ca-9310-5663b80763a6")
+	)
+	(wire
+		(pts
+			(xy 199.39 21.59) (xy 199.39 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98943136-49b6-4b36-a500-e7314dd7155e")
+	)
+	(wire
+		(pts
+			(xy 180.34 50.8) (xy 204.47 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3170,6 +3925,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 88.9) (xy 265.43 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9114b95-45d5-4f4b-bd28-a80fbf8f68d1")
+	)
+	(wire
+		(pts
 			(xy 60.96 57.15) (xy 60.96 74.93)
 		)
 		(stroke
@@ -3177,6 +3942,16 @@
 			(type default)
 		)
 		(uuid "bb60e08b-f652-4fd9-afc5-152496d65dd9")
+	)
+	(wire
+		(pts
+			(xy 187.96 53.34) (xy 187.96 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb65c2aa-20b3-47f0-b5bf-aec6bf4f6d36")
 	)
 	(wire
 		(pts
@@ -3220,6 +3995,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 110.49) (xy 48.26 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf42cb2d-b02f-4575-84f3-ebbc97fa406c")
+	)
+	(wire
+		(pts
 			(xy 104.14 31.75) (xy 116.84 31.75)
 		)
 		(stroke
@@ -3240,6 +4025,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 39.37) (xy 186.69 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4369acd-eda8-4ab7-a35c-f9d47a82c207")
+	)
+	(wire
+		(pts
 			(xy 86.36 92.71) (xy 86.36 127)
 		)
 		(stroke
@@ -3257,6 +4052,26 @@
 			(type default)
 		)
 		(uuid "c5268a0a-42b7-420b-b62f-99a1de56ea0a")
+	)
+	(wire
+		(pts
+			(xy 22.86 74.93) (xy 22.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6d1d1b8-1a3a-4dd7-bac0-554e0cc19786")
+	)
+	(wire
+		(pts
+			(xy 22.86 57.15) (xy 22.86 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8074206-439f-4442-9a35-4e436402283a")
 	)
 	(wire
 		(pts
@@ -3320,13 +4135,13 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 21.59) (xy 187.96 39.37)
+			(xy 227.33 57.15) (xy 200.66 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d17d6b3c-99be-4218-a945-495332ed9d1f")
+		(uuid "d1728a15-cd36-46cb-96ac-e8fcdbdeafe5")
 	)
 	(wire
 		(pts
@@ -3360,6 +4175,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 21.59) (xy 187.96 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d34fc223-ab59-49e6-a53f-de74115e55f0")
+	)
+	(wire
+		(pts
 			(xy 162.56 57.15) (xy 162.56 74.93)
 		)
 		(stroke
@@ -3380,6 +4205,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 83.82) (xy 251.46 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dae7e88b-b194-46d4-8235-9478e1656bb1")
+	)
+	(wire
+		(pts
 			(xy 154.94 120.65) (xy 167.64 120.65)
 		)
 		(stroke
@@ -3387,16 +4222,6 @@
 			(type default)
 		)
 		(uuid "dc5e244e-2626-43c2-98da-729ea5fd2b53")
-	)
-	(wire
-		(pts
-			(xy 22.86 57.15) (xy 22.86 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc77cbd3-40a9-4934-87a7-340ea69f4068")
 	)
 	(wire
 		(pts
@@ -3420,6 +4245,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 39.37) (xy 227.33 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e10e01cb-43bf-48cd-a240-6836c9bd6e96")
+	)
+	(wire
+		(pts
 			(xy 91.44 102.87) (xy 104.14 102.87)
 		)
 		(stroke
@@ -3437,6 +4272,16 @@
 			(type default)
 		)
 		(uuid "e2e4582f-4166-48b7-9b99-942280673f2f")
+	)
+	(wire
+		(pts
+			(xy 254 72.39) (xy 257.81 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e336e98d-10ea-47f7-8b81-a76e16787ca3")
 	)
 	(wire
 		(pts
@@ -3467,16 +4312,6 @@
 			(type default)
 		)
 		(uuid "e677b50e-7768-44ea-85ac-89a9e53fcb80")
-	)
-	(wire
-		(pts
-			(xy 22.86 74.93) (xy 22.86 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8503b6f-427d-4386-9f54-2b4d72cf2abd")
 	)
 	(wire
 		(pts
@@ -3527,16 +4362,6 @@
 			(type default)
 		)
 		(uuid "eee78f53-f3c7-4a41-8c5b-52de76e6b458")
-	)
-	(wire
-		(pts
-			(xy 229.87 24.13) (xy 229.87 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef85a86b-8144-4aa2-9d8c-38550fd2a0e4")
 	)
 	(wire
 		(pts
@@ -3600,6 +4425,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 39.37) (xy 210.82 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5c5f10f-03aa-490b-8e4e-ccd927c15520")
+	)
+	(wire
+		(pts
 			(xy 193.04 85.09) (xy 205.74 85.09)
 		)
 		(stroke
@@ -3630,6 +4465,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 74.93) (xy 234.95 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87e80f0-fef6-4809-b7ea-f47204ae2ca6")
+	)
+	(wire
+		(pts
 			(xy 78.74 102.87) (xy 91.44 102.87)
 		)
 		(stroke
@@ -3637,6 +4482,16 @@
 			(type default)
 		)
 		(uuid "f8c16a5a-b0ce-4819-bb69-909ab5aba5fe")
+	)
+	(wire
+		(pts
+			(xy 254 58.42) (xy 254 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8d01b8c-6c3a-4d78-b7dd-2d2c07b9b83d")
 	)
 	(wire
 		(pts
@@ -3667,6 +4522,16 @@
 			(type default)
 		)
 		(uuid "fc340ed3-c18c-4071-abbc-0e9d603c7814")
+	)
+	(wire
+		(pts
+			(xy 204.47 49.53) (xy 236.22 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffffbc03-e72b-4b53-bff7-399aacda329f")
 	)
 	(global_label "row0"
 		(shape input)
@@ -3846,22 +4711,22 @@
 	)
 	(global_label "rot0"
 		(shape input)
-		(at 220.98 21.59 0)
+		(at 234.95 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "5724934a-2f44-4102-aa32-695c856beffc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.8356 21.59 0)
+			(at 228.0944 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3972,6 +4837,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col14"
+		(shape input)
+		(at 265.43 67.31 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82d2fcf2-3394-4590-bb8c-8ef2dbf0cf4e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.43 59.003 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4088,6 +4975,28 @@
 	)
 	(global_label "col14"
 		(shape input)
+		(at 248.92 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "beb1e4f8-a50c-41fd-8483-7e36d480c262")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.613 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col14"
+		(shape input)
 		(at 200.66 127 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4130,6 +5039,28 @@
 			)
 		)
 	)
+	(global_label "row0"
+		(shape input)
+		(at 265.43 93.98 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d3c44d25-72c4-468c-be12-a0ae929d2fc0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.43 101.4404 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "col1"
 		(shape input)
 		(at 35.56 127 270)
@@ -4154,22 +5085,22 @@
 	)
 	(global_label "rot1"
 		(shape input)
-		(at 220.98 26.67 0)
+		(at 234.95 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f7948f09-61e0-4dae-bb05-753e965187fd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.8356 26.67 0)
+			(at 228.0944 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4184,7 +5115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0282daca-ff65-469c-a4fa-637e2c0207df")
-		(property "Reference" "D41"
+		(property "Reference" "D42"
 			(at 157.48 63.4999 90)
 			(effects
 				(font
@@ -4256,84 +5187,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:RotaryEncoder_Switch")
-		(at 213.36 24.13 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02c33848-6964-47d9-be37-df796d71f688")
-		(property "Reference" "SW1"
-			(at 213.36 13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RotaryEncoder_Switch"
-			(at 213.36 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-various:ROT_Alps_EC11E-Switch"
-			(at 217.17 20.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 17.526 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
-			(at 213.36 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "90bb0fdd-bf14-4314-81c3-33fec821e3ec")
-		)
-		(pin "S2"
-			(uuid "429af089-aea4-48fe-a988-180969643829")
-		)
-		(pin "A"
-			(uuid "66e90f42-da37-497c-8336-739b2a1a2ea8")
-		)
-		(pin "S1"
-			(uuid "98f8063c-b842-4c5b-88e4-9dac114b0811")
-		)
-		(pin "B"
-			(uuid "6d23fad4-423f-48db-a360-4371ad4a6eb0")
-		)
-		(instances
-			(project ""
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "SW1")
+					(reference "D42")
 					(unit 1)
 				)
 			)
@@ -4349,7 +5203,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "039744b5-707b-495c-90d1-b09278e5ede8")
-		(property "Reference" "MX41"
+		(property "Reference" "MX42"
 			(at 152.4 52.07 0)
 			(effects
 				(font
@@ -4401,7 +5255,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX41")
+					(reference "MX42")
 					(unit 1)
 				)
 			)
@@ -4417,7 +5271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "039c0bcb-9b52-45bf-b0bd-1f59834ac859")
-		(property "Reference" "MX65"
+		(property "Reference" "MX67"
 			(at 88.9 87.63 0)
 			(effects
 				(font
@@ -4469,7 +5323,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX65")
+					(reference "MX67")
 					(unit 1)
 				)
 			)
@@ -4484,7 +5338,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03da1767-586e-4cb4-8baf-89794d16cefb")
-		(property "Reference" "MX74"
+		(property "Reference" "MX76"
 			(at 191.77 88.9 0)
 			(effects
 				(font
@@ -4536,7 +5390,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX74")
+					(reference "MX76")
 					(unit 1)
 				)
 			)
@@ -4552,7 +5406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "050929ae-cd35-45c4-b079-5e1d14c9e780")
-		(property "Reference" "D53"
+		(property "Reference" "D54"
 			(at 119.38 81.2799 90)
 			(effects
 				(font
@@ -4624,7 +5478,75 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D53")
+					(reference "D54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 50.8 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0542940a-2b6b-4996-a3be-41c120cb186a")
+		(property "Reference" "MX79"
+			(at 50.8 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 50.8 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.25u"
+			(at 50.8 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 50.8 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13fe1b0b-325f-46ae-a761-f9a79e6e8073")
+		)
+		(pin "2"
+			(uuid "28ed35e4-77c4-4c1a-9a46-b3f3a303606f")
+		)
+		(instances
+			(project "kicad8"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "MX79")
 					(unit 1)
 				)
 			)
@@ -4640,7 +5562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0574e886-a94e-429c-9c30-caea2f88d96c")
-		(property "Reference" "MX58"
+		(property "Reference" "MX60"
 			(at 190.5 69.85 0)
 			(effects
 				(font
@@ -4692,7 +5614,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX58")
+					(reference "MX60")
 					(unit 1)
 				)
 			)
@@ -4708,7 +5630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "063b3f50-cd2f-42c6-97ff-be8d41b20ca1")
-		(property "Reference" "MX32"
+		(property "Reference" "MX33"
 			(at 38.1 52.07 0)
 			(effects
 				(font
@@ -4760,7 +5682,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX32")
+					(reference "MX33")
 					(unit 1)
 				)
 			)
@@ -4856,16 +5778,15 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 203.2 41.91 0)
+		(at 233.68 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "076dfdca-eee9-4896-bb79-23c4467a898a")
-		(property "Reference" "MX30"
-			(at 203.2 34.29 0)
+		(property "Reference" "MX31"
+			(at 233.68 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4873,7 +5794,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 203.2 36.83 0)
+			(at 233.68 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4881,7 +5802,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
-			(at 203.2 41.91 0)
+			(at 233.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4890,7 +5811,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 41.91 0)
+			(at 233.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,7 +5820,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 203.2 41.91 0)
+			(at 233.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,7 +5837,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX30")
+					(reference "MX31")
 					(unit 1)
 				)
 			)
@@ -5012,6 +5933,74 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 25.4 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09b28b82-751b-413b-b75e-7f96dc71015c")
+		(property "Reference" "MX48"
+			(at 25.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 25.4 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_S_CPG151101S11_1u"
+			(at 25.4 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 25.4 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9af3f4e-656f-4182-827a-da77322650a6")
+		)
+		(pin "2"
+			(uuid "07775808-90b1-4bf9-b8f1-ab7a6ff7940d")
+		)
+		(instances
+			(project "kicad8"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "MX48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 190.5 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5088,7 +6077,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b968006-744c-4b0b-a72b-8c50c48d27db")
-		(property "Reference" "MX49"
+		(property "Reference" "MX51"
 			(at 63.5 69.85 0)
 			(effects
 				(font
@@ -5140,7 +6129,168 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX49")
+					(reference "MX51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_PMOS_GSD")
+		(at 262.89 72.39 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c6ceba4-ea76-48ac-95b5-ff3c67c3dcb3")
+		(property "Reference" "Q2"
+			(at 269.24 73.6601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_PMOS_GSD"
+			(at 269.24 71.1201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, gate/source/drain"
+			(at 262.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98e85fd4-073d-4b41-9fdc-6f07a265e1c3")
+		)
+		(pin "2"
+			(uuid "87282374-705d-4925-bc84-5287fc808d57")
+		)
+		(pin "3"
+			(uuid "dc64635e-9a75-41d7-8573-be260db5bf6d")
+		)
+		(instances
+			(project ""
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 265.43 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f30dc76-f873-461a-b289-6635947fe61c")
+		(property "Reference" "D15"
+			(at 267.97 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 267.97 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 265.43 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 265.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 265.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 265.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "de272d81-142b-4645-ba3e-35054d2435ec")
+		)
+		(pin "1"
+			(uuid "23391ef6-7755-4892-8549-2b8e468b3e76")
+		)
+		(instances
+			(project "kicad8"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -5156,7 +6306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11f5771f-8882-4699-bb4c-2ed42e34b382")
-		(property "Reference" "MX66"
+		(property "Reference" "MX68"
 			(at 101.6 87.63 0)
 			(effects
 				(font
@@ -5208,7 +6358,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX66")
+					(reference "MX68")
 					(unit 1)
 				)
 			)
@@ -5224,7 +6374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "128ca6c5-b195-490e-a42b-7580e9c5f728")
-		(property "Reference" "D64"
+		(property "Reference" "D65"
 			(at 81.28 99.0599 90)
 			(effects
 				(font
@@ -5296,7 +6446,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D64")
+					(reference "D65")
 					(unit 1)
 				)
 			)
@@ -5400,7 +6550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1520c4c7-7142-4302-824f-e7126b5bb18a")
-		(property "Reference" "S58"
+		(property "Reference" "S1"
 			(at 181.61 74.8029 0)
 			(effects
 				(font
@@ -5448,7 +6598,7 @@
 		(instances
 			(project ""
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "S58")
+					(reference "S1")
 					(unit 1)
 				)
 			)
@@ -5464,7 +6614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1700e812-6821-4051-8503-39c455fb6e98")
-		(property "Reference" "D63"
+		(property "Reference" "D64"
 			(at 68.58 99.0599 90)
 			(effects
 				(font
@@ -5536,7 +6686,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D63")
+					(reference "D64")
 					(unit 1)
 				)
 			)
@@ -5552,7 +6702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17de9010-60ec-4e65-9983-4dae630c9373")
-		(property "Reference" "D59"
+		(property "Reference" "D60"
 			(at 208.28 81.2799 90)
 			(effects
 				(font
@@ -5624,7 +6774,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D59")
+					(reference "D60")
 					(unit 1)
 				)
 			)
@@ -5640,7 +6790,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "187ce322-c3b7-469c-97ab-322324f4ac2b")
-		(property "Reference" "D74"
+		(property "Reference" "D75"
 			(at 196.85 100.3299 90)
 			(effects
 				(font
@@ -5712,7 +6862,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D74")
+					(reference "D75")
 					(unit 1)
 				)
 			)
@@ -5720,7 +6870,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 205.74 46.99 90)
+		(at 236.22 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5728,8 +6878,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a813614-cb8d-44f3-99c8-f39bdab89afe")
-		(property "Reference" "D30"
-			(at 208.28 45.7199 90)
+		(property "Reference" "D31"
+			(at 238.76 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5738,7 +6888,7 @@
 			)
 		)
 		(property "Value" "D_Small"
-			(at 208.28 48.2599 90)
+			(at 238.76 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5747,7 +6897,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 205.74 46.99 90)
+			(at 236.22 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5756,7 +6906,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 46.99 90)
+			(at 236.22 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +6915,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 205.74 46.99 0)
+			(at 236.22 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5774,7 +6924,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 205.74 46.99 0)
+			(at 236.22 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5783,7 +6933,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 205.74 46.99 0)
+			(at 236.22 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5800,7 +6950,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D30")
+					(reference "D31")
 					(unit 1)
 				)
 			)
@@ -5972,7 +7122,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b971b87-3b6d-4ea8-8297-60bd9566578a")
-		(property "Reference" "D54"
+		(property "Reference" "D55"
 			(at 132.08 81.2799 90)
 			(effects
 				(font
@@ -6044,7 +7194,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D54")
+					(reference "D55")
 					(unit 1)
 				)
 			)
@@ -6060,7 +7210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c9d23d5-ccf0-4f2e-82dc-e45ca364ab56")
-		(property "Reference" "D56"
+		(property "Reference" "D57"
 			(at 157.48 81.2799 90)
 			(effects
 				(font
@@ -6132,7 +7282,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D56")
+					(reference "D57")
 					(unit 1)
 				)
 			)
@@ -6148,7 +7298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d8ee8b6-f787-4c68-b5d5-12fca53f8166")
-		(property "Reference" "D77"
+		(property "Reference" "D78"
 			(at 55.88 116.8399 90)
 			(effects
 				(font
@@ -6220,7 +7370,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D77")
+					(reference "D78")
 					(unit 1)
 				)
 			)
@@ -6236,7 +7386,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e539b43-92ea-43db-8c44-cb599ab0d44e")
-		(property "Reference" "MX34"
+		(property "Reference" "MX35"
 			(at 63.5 52.07 0)
 			(effects
 				(font
@@ -6288,7 +7438,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX34")
+					(reference "MX35")
 					(unit 1)
 				)
 			)
@@ -6304,7 +7454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fc04a90-b4a7-41f0-9b20-be19595940bd")
-		(property "Reference" "D81"
+		(property "Reference" "D82"
 			(at 170.18 116.8399 90)
 			(effects
 				(font
@@ -6376,7 +7526,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D81")
+					(reference "D82")
 					(unit 1)
 				)
 			)
@@ -6392,7 +7542,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2178125b-d612-4a44-ac68-3916a44095c9")
-		(property "Reference" "D35"
+		(property "Reference" "D36"
 			(at 81.28 63.4999 90)
 			(effects
 				(font
@@ -6464,7 +7614,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D35")
+					(reference "D36")
 					(unit 1)
 				)
 			)
@@ -6684,7 +7834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27c88051-8fa3-47f5-b9bc-455cc3b2b628")
-		(property "Reference" "MX16"
+		(property "Reference" "MX15"
 			(at 25.4 34.29 0)
 			(effects
 				(font
@@ -6736,7 +7886,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX16")
+					(reference "MX15")
 					(unit 1)
 				)
 			)
@@ -6840,7 +7990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a98ca52-10e5-419d-9d88-e7ab98634ea5")
-		(property "Reference" "MX26"
+		(property "Reference" "MX25"
 			(at 152.4 34.29 0)
 			(effects
 				(font
@@ -6892,7 +8042,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX26")
+					(reference "MX25")
 					(unit 1)
 				)
 			)
@@ -6908,7 +8058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b493f66-debf-4526-9c0b-258ea4948e12")
-		(property "Reference" "MX52"
+		(property "Reference" "MX54"
 			(at 101.6 69.85 0)
 			(effects
 				(font
@@ -6960,7 +8110,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX52")
+					(reference "MX54")
 					(unit 1)
 				)
 			)
@@ -6976,7 +8126,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b5d86e1-bb11-4aff-a875-b253605af5ce")
-		(property "Reference" "MX67"
+		(property "Reference" "MX69"
 			(at 114.3 87.63 0)
 			(effects
 				(font
@@ -7028,7 +8178,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX67")
+					(reference "MX69")
 					(unit 1)
 				)
 			)
@@ -7043,7 +8193,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2bd68441-4484-4859-ac8f-ea47f2518c52")
-		(property "Reference" "S78"
+		(property "Reference" "S2"
 			(at 121.92 110.3629 0)
 			(effects
 				(font
@@ -7091,7 +8241,75 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "S78")
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 38.1 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c09bd65-278b-4964-9118-adac14fdd9f6")
+		(property "Reference" "MX78"
+			(at 38.1 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 38.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.25u"
+			(at 38.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 38.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d91836a-87cf-4856-9886-df0489ec3606")
+		)
+		(pin "2"
+			(uuid "fc70fdf0-c342-40ee-9df7-54e39e3f26bf")
+		)
+		(instances
+			(project "kicad8"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "MX78")
 					(unit 1)
 				)
 			)
@@ -7175,7 +8393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30d35dad-0b02-436a-b9ac-d3d73db61f7d")
-		(property "Reference" "D60"
+		(property "Reference" "D61"
 			(at 30.48 99.0599 90)
 			(effects
 				(font
@@ -7247,7 +8465,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D60")
+					(reference "D61")
 					(unit 1)
 				)
 			)
@@ -7263,7 +8481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31effae7-c7b6-4c30-8472-3b80a4746d6c")
-		(property "Reference" "MX70"
+		(property "Reference" "MX72"
 			(at 152.4 87.63 0)
 			(effects
 				(font
@@ -7315,7 +8533,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX70")
+					(reference "MX72")
 					(unit 1)
 				)
 			)
@@ -7323,7 +8541,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 193.04 46.99 90)
+		(at 204.47 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7331,8 +8549,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "332b6f88-2cec-4ec8-83a7-a980bb0b117d")
-		(property "Reference" "D29"
-			(at 195.58 45.7199 90)
+		(property "Reference" "D30"
+			(at 207.01 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7341,7 +8559,7 @@
 			)
 		)
 		(property "Value" "D_Small"
-			(at 195.58 48.2599 90)
+			(at 207.01 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7350,7 +8568,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 193.04 46.99 90)
+			(at 204.47 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7359,7 +8577,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 46.99 90)
+			(at 204.47 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7368,7 +8586,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 193.04 46.99 0)
+			(at 204.47 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7377,7 +8595,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 193.04 46.99 0)
+			(at 204.47 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7386,7 +8604,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 193.04 46.99 0)
+			(at 204.47 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7403,7 +8621,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D29")
+					(reference "D30")
 					(unit 1)
 				)
 			)
@@ -7507,7 +8725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "358bcdd5-cd8c-40a9-8152-91a7f0517f74")
-		(property "Reference" "D78"
+		(property "Reference" "D79"
 			(at 106.68 116.8399 90)
 			(effects
 				(font
@@ -7579,7 +8797,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D78")
+					(reference "D79")
 					(unit 1)
 				)
 			)
@@ -7595,7 +8813,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3805d40c-5b82-4c93-a683-a89d9e236d77")
-		(property "Reference" "MX20"
+		(property "Reference" "MX19"
 			(at 76.2 34.29 0)
 			(effects
 				(font
@@ -7647,7 +8865,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX20")
+					(reference "MX19")
 					(unit 1)
 				)
 			)
@@ -7751,7 +8969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a497080-2051-4b5c-8c6a-fad6dc7a0157")
-		(property "Reference" "D82"
+		(property "Reference" "D83"
 			(at 184.15 118.1099 90)
 			(effects
 				(font
@@ -7823,7 +9041,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D82")
+					(reference "D83")
 					(unit 1)
 				)
 			)
@@ -7927,7 +9145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c90a622-f052-4e31-ae2c-ecba6bc21122")
-		(property "Reference" "MX53"
+		(property "Reference" "MX55"
 			(at 114.3 69.85 0)
 			(effects
 				(font
@@ -7979,7 +9197,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX53")
+					(reference "MX55")
 					(unit 1)
 				)
 			)
@@ -7995,7 +9213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3cc80151-461c-4138-8967-14b856179edb")
-		(property "Reference" "D83"
+		(property "Reference" "D84"
 			(at 196.85 118.1099 90)
 			(effects
 				(font
@@ -8067,7 +9285,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D83")
+					(reference "D84")
 					(unit 1)
 				)
 			)
@@ -8083,7 +9301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e0b5b15-f557-4586-be78-5cc937aadd40")
-		(property "Reference" "D68"
+		(property "Reference" "D69"
 			(at 132.08 99.0599 90)
 			(effects
 				(font
@@ -8155,7 +9373,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D68")
+					(reference "D69")
 					(unit 1)
 				)
 			)
@@ -8259,7 +9477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41298505-d0a7-4a41-a02c-34e16b2f3e0d")
-		(property "Reference" "MX50"
+		(property "Reference" "MX52"
 			(at 76.2 69.85 0)
 			(effects
 				(font
@@ -8311,7 +9529,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX50")
+					(reference "MX52")
 					(unit 1)
 				)
 			)
@@ -8319,16 +9537,15 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 190.5 41.91 0)
+		(at 201.93 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "44780f82-4a08-47fe-9f60-3c2bfb285ae6")
 		(property "Reference" "MX29"
-			(at 190.5 34.29 0)
+			(at 201.93 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8336,7 +9553,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 190.5 36.83 0)
+			(at 201.93 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8344,7 +9561,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
-			(at 190.5 41.91 0)
+			(at 201.93 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8353,7 +9570,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 41.91 0)
+			(at 201.93 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8362,7 +9579,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 190.5 41.91 0)
+			(at 201.93 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8395,7 +9612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44d1fdf6-05cc-445a-89f3-14f20c979908")
-		(property "Reference" "D40"
+		(property "Reference" "D41"
 			(at 144.78 63.4999 90)
 			(effects
 				(font
@@ -8467,7 +9684,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D40")
+					(reference "D41")
 					(unit 1)
 				)
 			)
@@ -8483,7 +9700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44e212ae-6d10-4e8c-aac8-ef47e2f4bfc3")
-		(property "Reference" "D43"
+		(property "Reference" "D44"
 			(at 182.88 63.4999 90)
 			(effects
 				(font
@@ -8555,7 +9772,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D43")
+					(reference "D44")
 					(unit 1)
 				)
 			)
@@ -8571,7 +9788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ba3bcdc-696d-43b6-9b55-93e7d15b04c8")
-		(property "Reference" "MX62"
+		(property "Reference" "MX64"
 			(at 50.8 87.63 0)
 			(effects
 				(font
@@ -8623,7 +9840,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX62")
+					(reference "MX64")
 					(unit 1)
 				)
 			)
@@ -8639,7 +9856,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e363e3f-13aa-4f4b-86ff-2b05fbe3858b")
-		(property "Reference" "D80"
+		(property "Reference" "D81"
 			(at 157.48 116.8399 90)
 			(effects
 				(font
@@ -8711,7 +9928,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D80")
+					(reference "D81")
 					(unit 1)
 				)
 			)
@@ -8815,7 +10032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fb81d24-2389-45f8-8f03-8523e2dbc686")
-		(property "Reference" "MX18"
+		(property "Reference" "MX17"
 			(at 50.8 34.29 0)
 			(effects
 				(font
@@ -8867,7 +10084,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX18")
+					(reference "MX17")
 					(unit 1)
 				)
 			)
@@ -8971,7 +10188,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50ff8483-ea0a-408a-918d-2da9afbe1f0c")
-		(property "Reference" "D55"
+		(property "Reference" "D56"
 			(at 144.78 81.2799 90)
 			(effects
 				(font
@@ -9043,7 +10260,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D55")
+					(reference "D56")
 					(unit 1)
 				)
 			)
@@ -9059,7 +10276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "516ce8bf-ed28-4d20-b4cf-bff9ebac3aa4")
-		(property "Reference" "MX59"
+		(property "Reference" "MX61"
 			(at 203.2 69.85 0)
 			(effects
 				(font
@@ -9111,7 +10328,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX59")
+					(reference "MX61")
 					(unit 1)
 				)
 			)
@@ -9127,7 +10344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54535e4a-f8b7-42c2-b2c3-8f2f05d312df")
-		(property "Reference" "MX71"
+		(property "Reference" "MX73"
 			(at 165.1 87.63 0)
 			(effects
 				(font
@@ -9179,7 +10396,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX71")
+					(reference "MX73")
 					(unit 1)
 				)
 			)
@@ -9195,7 +10412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "547ad708-1cac-4934-9ed7-c10d484b7848")
-		(property "Reference" "D76"
+		(property "Reference" "D77"
 			(at 43.18 116.8399 90)
 			(effects
 				(font
@@ -9267,7 +10484,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D76")
+					(reference "D77")
 					(unit 1)
 				)
 			)
@@ -9371,7 +10588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "598b1500-ecdc-41e1-8f43-cc6431c317e0")
-		(property "Reference" "MX44"
+		(property "Reference" "MX45"
 			(at 190.5 52.07 0)
 			(effects
 				(font
@@ -9387,7 +10604,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.5u"
 			(at 190.5 59.69 0)
 			(effects
 				(font
@@ -9423,7 +10640,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX44")
+					(reference "MX45")
 					(unit 1)
 				)
 			)
@@ -9527,7 +10744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b557692-d9ce-4758-8c9e-b5cf89f4314f")
-		(property "Reference" "MX57"
+		(property "Reference" "MX59"
 			(at 165.1 69.85 0)
 			(effects
 				(font
@@ -9579,7 +10796,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX57")
+					(reference "MX59")
 					(unit 1)
 				)
 			)
@@ -9595,7 +10812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c6116f7-0c37-4108-958a-7edcd26caefb")
-		(property "Reference" "D69"
+		(property "Reference" "D70"
 			(at 144.78 99.0599 90)
 			(effects
 				(font
@@ -9667,7 +10884,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D69")
+					(reference "D70")
 					(unit 1)
 				)
 			)
@@ -9771,7 +10988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e2641f5-3df6-48b4-8604-6f76f5ce9f13")
-		(property "Reference" "MX83"
+		(property "Reference" "MX85"
 			(at 191.77 106.68 0)
 			(effects
 				(font
@@ -9823,7 +11040,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX83")
+					(reference "MX85")
 					(unit 1)
 				)
 			)
@@ -9838,7 +11055,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "617f4059-8271-4a52-996d-5f7cc1422261")
-		(property "Reference" "MX54"
+		(property "Reference" "MX56"
 			(at 127 69.85 0)
 			(effects
 				(font
@@ -9890,7 +11107,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX54")
+					(reference "MX56")
 					(unit 1)
 				)
 			)
@@ -9906,7 +11123,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "642e9ea8-25e9-4cbf-a701-90ed3cd60843")
-		(property "Reference" "MX72"
+		(property "Reference" "MX74"
 			(at 177.8 87.63 0)
 			(effects
 				(font
@@ -9922,7 +11139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.75u"
 			(at 177.8 95.25 0)
 			(effects
 				(font
@@ -9958,7 +11175,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX72")
+					(reference "MX74")
 					(unit 1)
 				)
 			)
@@ -9974,7 +11191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64a36dc6-62e5-4c9f-9a9b-fbcba01d2f4a")
-		(property "Reference" "MX19"
+		(property "Reference" "MX18"
 			(at 63.5 34.29 0)
 			(effects
 				(font
@@ -10026,7 +11243,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX19")
+					(reference "MX18")
 					(unit 1)
 				)
 			)
@@ -10042,7 +11259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "658742b2-a657-4480-a4b6-7d3c2847fd67")
-		(property "Reference" "MX45"
+		(property "Reference" "MX46"
 			(at 203.2 52.07 0)
 			(effects
 				(font
@@ -10094,7 +11311,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX45")
+					(reference "MX46")
 					(unit 1)
 				)
 			)
@@ -10109,7 +11326,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "67c4a4d5-816c-4e83-875d-a64d94501a87")
-		(property "Reference" "MX24"
+		(property "Reference" "MX23"
 			(at 127 34.29 0)
 			(effects
 				(font
@@ -10161,7 +11378,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX24")
+					(reference "MX23")
 					(unit 1)
 				)
 			)
@@ -10177,7 +11394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a29dff6-a0c2-4f21-9782-8a7152049bf0")
-		(property "Reference" "D75"
+		(property "Reference" "D76"
 			(at 30.48 116.8399 90)
 			(effects
 				(font
@@ -10249,7 +11466,7 @@
 		(instances
 			(project ""
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D75")
+					(reference "D76")
 					(unit 1)
 				)
 			)
@@ -10353,7 +11570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d332ac6-05fd-4dd2-8afb-35835f6b7ac4")
-		(property "Reference" "D57"
+		(property "Reference" "D58"
 			(at 170.18 81.2799 90)
 			(effects
 				(font
@@ -10425,7 +11642,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D57")
+					(reference "D58")
 					(unit 1)
 				)
 			)
@@ -10441,7 +11658,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d6183c9-2a3d-4187-b396-405b70b2f83a")
-		(property "Reference" "MX36"
+		(property "Reference" "MX37"
 			(at 88.9 52.07 0)
 			(effects
 				(font
@@ -10493,7 +11710,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX36")
+					(reference "MX37")
 					(unit 1)
 				)
 			)
@@ -10509,7 +11726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "703d6d93-738f-4fdd-a363-7119e82d09a6")
-		(property "Reference" "D48"
+		(property "Reference" "D49"
 			(at 55.88 81.2799 90)
 			(effects
 				(font
@@ -10581,7 +11798,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D48")
+					(reference "D49")
 					(unit 1)
 				)
 			)
@@ -10597,7 +11814,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "725afe41-3541-48cf-81df-5e4efc09e4ee")
-		(property "Reference" "MX81"
+		(property "Reference" "MX83"
 			(at 165.1 105.41 0)
 			(effects
 				(font
@@ -10649,70 +11866,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 223.52 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "72c6bdc8-4ee5-4f17-b387-94b02d065c30")
-		(property "Reference" "S29"
-			(at 229.87 43.0529 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MX_stab"
-			(at 229.87 45.5929 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
-			(at 223.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cherry MX-style stabilizer"
-			(at 223.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "kicad8"
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "S29")
+					(reference "MX83")
 					(unit 1)
 				)
 			)
@@ -10728,7 +11882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73a1cd15-eefa-46d5-a9c6-9a6ad200b36c")
-		(property "Reference" "MX35"
+		(property "Reference" "MX36"
 			(at 76.2 52.07 0)
 			(effects
 				(font
@@ -10780,7 +11934,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX35")
+					(reference "MX36")
 					(unit 1)
 				)
 			)
@@ -10796,7 +11950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75ab9edd-0df8-44ca-9322-df8062db1678")
-		(property "Reference" "D38"
+		(property "Reference" "D39"
 			(at 119.38 63.4999 90)
 			(effects
 				(font
@@ -10868,7 +12022,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D38")
+					(reference "D39")
 					(unit 1)
 				)
 			)
@@ -10884,7 +12038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79cb71b5-525d-42a4-af2d-241afe2c297b")
-		(property "Reference" "MX27"
+		(property "Reference" "MX26"
 			(at 165.1 34.29 0)
 			(effects
 				(font
@@ -10936,7 +12090,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX27")
+					(reference "MX26")
 					(unit 1)
 				)
 			)
@@ -10952,7 +12106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7aa3a5e9-51f1-4e44-b4d6-4e2a448bfefc")
-		(property "Reference" "D51"
+		(property "Reference" "D52"
 			(at 93.98 81.2799 90)
 			(effects
 				(font
@@ -11024,7 +12178,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D51")
+					(reference "D52")
 					(unit 1)
 				)
 			)
@@ -11040,7 +12194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b3d90eb-f704-4c84-8cdd-7c195f9dc6a6")
-		(property "Reference" "MX40"
+		(property "Reference" "MX41"
 			(at 139.7 52.07 0)
 			(effects
 				(font
@@ -11092,95 +12246,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 205.74 29.21 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b83b9dc-7ce8-4bef-af82-2bad99be7999")
-		(property "Reference" "D15"
-			(at 208.28 27.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 208.28 30.4799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 205.74 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 205.74 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 205.74 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 205.74 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 205.74 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d0fcc038-8646-4676-8cb7-6f7fb9357187")
-		)
-		(pin "1"
-			(uuid "9f812fa9-e677-44a4-b6a6-cddfe9f71925")
-		)
-		(instances
-			(project "kicad8"
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D15")
+					(reference "MX41")
 					(unit 1)
 				)
 			)
@@ -11284,7 +12350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81aaf8ef-de1e-4fc1-8631-479f0e494385")
-		(property "Reference" "MX22"
+		(property "Reference" "MX21"
 			(at 101.6 34.29 0)
 			(effects
 				(font
@@ -11336,7 +12402,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX22")
+					(reference "MX21")
 					(unit 1)
 				)
 			)
@@ -11352,7 +12418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81cdc658-faa6-4ffa-8f9c-5c32773625ad")
-		(property "Reference" "MX37"
+		(property "Reference" "MX38"
 			(at 101.6 52.07 0)
 			(effects
 				(font
@@ -11404,7 +12470,73 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX37")
+					(reference "MX38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 254 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81ce6c4a-005d-48fd-a8ed-7397deaee037")
+		(property "Reference" "#PWR018"
+			(at 254 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 254 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 254 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "408c1cb1-520b-4e0d-923b-a61054bc2186")
+		)
+		(instances
+			(project ""
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -11420,7 +12552,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82e33d0b-f74f-4709-85de-5a15774cf148")
-		(property "Reference" "MX55"
+		(property "Reference" "MX57"
 			(at 139.7 69.85 0)
 			(effects
 				(font
@@ -11472,7 +12604,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX55")
+					(reference "MX57")
 					(unit 1)
 				)
 			)
@@ -11488,7 +12620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84ada3d9-f338-4678-9e15-f9c3390bbbfb")
-		(property "Reference" "D71"
+		(property "Reference" "D72"
 			(at 170.18 99.0599 90)
 			(effects
 				(font
@@ -11560,7 +12692,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D71")
+					(reference "D72")
 					(unit 1)
 				)
 			)
@@ -11644,7 +12776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8af506b3-39a6-4d74-a9db-0aca71369fca")
-		(property "Reference" "MX23"
+		(property "Reference" "MX22"
 			(at 114.3 34.29 0)
 			(effects
 				(font
@@ -11696,7 +12828,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX23")
+					(reference "MX22")
 					(unit 1)
 				)
 			)
@@ -11712,7 +12844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b57bfee-39e3-47cb-9937-a733bbd400a1")
-		(property "Reference" "MX64"
+		(property "Reference" "MX66"
 			(at 76.2 87.63 0)
 			(effects
 				(font
@@ -11764,7 +12896,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX64")
+					(reference "MX66")
 					(unit 1)
 				)
 			)
@@ -11780,7 +12912,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d98eaba-a911-48dd-82e7-bbd65bc27100")
-		(property "Reference" "D52"
+		(property "Reference" "D53"
 			(at 106.68 81.2799 90)
 			(effects
 				(font
@@ -11852,7 +12984,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D52")
+					(reference "D53")
 					(unit 1)
 				)
 			)
@@ -11868,7 +13000,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90749864-bfe3-41bf-a08b-8590d1e990bb")
-		(property "Reference" "MX79"
+		(property "Reference" "MX81"
 			(at 139.7 105.41 0)
 			(effects
 				(font
@@ -11920,7 +13052,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX79")
+					(reference "MX81")
 					(unit 1)
 				)
 			)
@@ -11936,7 +13068,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91a9ead2-d407-4f71-a6b5-cd99f610ab62")
-		(property "Reference" "D66"
+		(property "Reference" "D67"
 			(at 106.68 99.0599 90)
 			(effects
 				(font
@@ -12008,7 +13140,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D66")
+					(reference "D67")
 					(unit 1)
 				)
 			)
@@ -12112,7 +13244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9467dfa8-135b-4aed-bb39-b373e4286364")
-		(property "Reference" "D36"
+		(property "Reference" "D37"
 			(at 93.98 63.4999 90)
 			(effects
 				(font
@@ -12184,7 +13316,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D36")
+					(reference "D37")
 					(unit 1)
 				)
 			)
@@ -12200,7 +13332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94f06afc-f68d-4c17-8109-5c5b97c4da33")
-		(property "Reference" "D37"
+		(property "Reference" "D38"
 			(at 106.68 63.4999 90)
 			(effects
 				(font
@@ -12272,7 +13404,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D37")
+					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -12376,7 +13508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9611fd95-2f8c-4d81-b2ed-6c8e1eab3d62")
-		(property "Reference" "MX38"
+		(property "Reference" "MX39"
 			(at 114.3 52.07 0)
 			(effects
 				(font
@@ -12428,7 +13560,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX38")
+					(reference "MX39")
 					(unit 1)
 				)
 			)
@@ -12444,7 +13576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9778a8c6-1c8d-4f39-8c1b-125d3adfb4b4")
-		(property "Reference" "MX17"
+		(property "Reference" "MX16"
 			(at 38.1 34.29 0)
 			(effects
 				(font
@@ -12496,7 +13628,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX17")
+					(reference "MX16")
 					(unit 1)
 				)
 			)
@@ -12512,7 +13644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99b19b9d-5dd1-42af-a676-f6fac55a13ec")
-		(property "Reference" "MX28"
+		(property "Reference" "MX27"
 			(at 177.8 34.29 0)
 			(effects
 				(font
@@ -12564,7 +13696,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX28")
+					(reference "MX27")
 					(unit 1)
 				)
 			)
@@ -12579,7 +13711,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9a34b0b1-88f2-4173-bb75-ac34c68c69cd")
-		(property "Reference" "MX39"
+		(property "Reference" "MX40"
 			(at 127 52.07 0)
 			(effects
 				(font
@@ -12631,7 +13763,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX39")
+					(reference "MX40")
 					(unit 1)
 				)
 			)
@@ -12647,7 +13779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d9fdd1a-d367-443e-ae44-6e46a473d689")
-		(property "Reference" "MX43"
+		(property "Reference" "MX44"
 			(at 177.8 52.07 0)
 			(effects
 				(font
@@ -12699,7 +13831,76 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX43")
+					(reference "MX44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 254 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e59916d-fc81-4530-a4e1-d2b1b4358323")
+		(property "Reference" "R6"
+			(at 256.54 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 256.54 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 254 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 254 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5fe392f-ca12-4369-8638-95955b4f875c")
+		)
+		(pin "2"
+			(uuid "195d0660-db33-43b2-96d1-65df2c7fc7f4")
+		)
+		(instances
+			(project ""
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -12715,7 +13916,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a38a4b55-b0d4-49aa-9947-a907749b15ba")
-		(property "Reference" "D44"
+		(property "Reference" "D45"
 			(at 195.58 63.4999 90)
 			(effects
 				(font
@@ -12787,7 +13988,75 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D44")
+					(reference "D45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_solder")
+		(at 189.23 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4e4a4ac-1e02-42a1-98d7-d7582db88c64")
+		(property "Reference" "MX28"
+			(at 189.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_solder"
+			(at 189.23 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+			(at 189.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 189.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "388341f2-75c4-449b-ae8b-b6654dfc7070")
+		)
+		(pin "1"
+			(uuid "3f10060d-78a9-4be7-a55f-7276f5b447b0")
+		)
+		(instances
+			(project "kicad8"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "MX28")
 					(unit 1)
 				)
 			)
@@ -12801,7 +14070,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a53be520-a252-45f5-b291-f1bc61fc982c")
 		(property "Reference" "D28"
 			(at 182.88 45.7199 90)
@@ -12891,7 +14159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8013d36-9a93-469f-b1b9-2b051f619d8e")
-		(property "Reference" "D45"
+		(property "Reference" "D46"
 			(at 208.28 63.4999 90)
 			(effects
 				(font
@@ -12963,7 +14231,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D45")
+					(reference "D46")
 					(unit 1)
 				)
 			)
@@ -13067,7 +14335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aaa61807-4964-492c-b5ad-b636a81397a9")
-		(property "Reference" "MX25"
+		(property "Reference" "MX24"
 			(at 139.7 34.29 0)
 			(effects
 				(font
@@ -13119,7 +14387,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX25")
+					(reference "MX24")
 					(unit 1)
 				)
 			)
@@ -13135,7 +14403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abb3237b-d804-4722-9f29-1fa0e3c6d885")
-		(property "Reference" "MX73"
+		(property "Reference" "MX75"
 			(at 203.2 87.63 0)
 			(effects
 				(font
@@ -13187,7 +14455,95 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX73")
+					(reference "MX75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 191.77 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad9abdbd-076c-4860-bb3b-56040f8c95c5")
+		(property "Reference" "D29"
+			(at 194.31 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 194.31 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 191.77 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a135a7da-974f-4537-bdc0-e0d2dd1f7da4")
+		)
+		(pin "1"
+			(uuid "cb854bf4-c8b0-4ae5-a73f-91314b0261ba")
+		)
+		(instances
+			(project "kicad8"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "D29")
 					(unit 1)
 				)
 			)
@@ -13291,7 +14647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1fcb2f5-2666-44fa-97e7-0ad674f1d1ed")
-		(property "Reference" "D62"
+		(property "Reference" "D63"
 			(at 55.88 99.0599 90)
 			(effects
 				(font
@@ -13363,7 +14719,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D62")
+					(reference "D63")
 					(unit 1)
 				)
 			)
@@ -13379,7 +14735,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b443348f-354d-4515-8400-2fd438c67fbb")
-		(property "Reference" "D84"
+		(property "Reference" "D85"
 			(at 209.55 118.1099 90)
 			(effects
 				(font
@@ -13451,7 +14807,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D84")
+					(reference "D85")
 					(unit 1)
 				)
 			)
@@ -13555,7 +14911,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5328fc6-192c-4c06-92a8-85c34e2d033b")
-		(property "Reference" "D61"
+		(property "Reference" "D62"
 			(at 43.18 99.0599 90)
 			(effects
 				(font
@@ -13627,7 +14983,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D61")
+					(reference "D62")
 					(unit 1)
 				)
 			)
@@ -13643,7 +14999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b614b040-d816-42df-a6d7-f88d86eac31b")
-		(property "Reference" "MX51"
+		(property "Reference" "MX53"
 			(at 88.9 69.85 0)
 			(effects
 				(font
@@ -13695,7 +15051,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX51")
+					(reference "MX53")
 					(unit 1)
 				)
 			)
@@ -13711,7 +15067,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b73e14cb-8e9f-49bb-99f1-774f79d17ea5")
-		(property "Reference" "MX63"
+		(property "Reference" "MX65"
 			(at 63.5 87.63 0)
 			(effects
 				(font
@@ -13763,7 +15119,81 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX63")
+					(reference "MX65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch")
+		(at 242.57 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba2bed44-dc80-47a1-beff-54ea81d3134e")
+		(property "Reference" "SW1"
+			(at 242.57 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ROT_SKYLOONG_HS"
+			(at 242.57 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch"
+			(at 242.57 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://skyloong.vip/products/abs-hot-swappable-knobs-madule"
+			(at 242.57 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SKYLOONG hotswap encoder module"
+			(at 242.57 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "B"
+			(uuid "f56b10e6-859d-408d-8433-6cd03e5d7bfc")
+		)
+		(pin "A"
+			(uuid "cf7752d2-5255-41da-a97f-8e36c94cdc77")
+		)
+		(pin "S"
+			(uuid "866e04d4-2e17-47a3-a44c-039e10d78e1f")
+		)
+		(pin "C"
+			(uuid "d7631521-13ca-400f-bdcf-614d7707682f")
+		)
+		(instances
+			(project ""
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -13847,7 +15277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb708f8f-5e11-4212-b22a-5fd32ab1774d")
-		(property "Reference" "MX48"
+		(property "Reference" "MX50"
 			(at 50.8 69.85 0)
 			(effects
 				(font
@@ -13899,7 +15329,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX48")
+					(reference "MX50")
 					(unit 1)
 				)
 			)
@@ -13915,7 +15345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bce59e86-d1cf-44ce-acff-e91390dc27b5")
-		(property "Reference" "MX84"
+		(property "Reference" "MX86"
 			(at 204.47 106.68 0)
 			(effects
 				(font
@@ -13967,7 +15397,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX84")
+					(reference "MX86")
 					(unit 1)
 				)
 			)
@@ -14063,16 +15493,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 229.87 25.4 0)
+		(at 226.06 74.93 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c3876c7a-750a-461e-b0f0-6e7e0eb6a8dc")
 		(property "Reference" "#PWR016"
-			(at 229.87 31.75 0)
+			(at 226.06 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14081,7 +15511,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 229.87 30.48 0)
+			(at 226.06 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14089,7 +15519,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 25.4 0)
+			(at 226.06 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14098,7 +15528,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 25.4 0)
+			(at 226.06 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14107,7 +15537,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 229.87 25.4 0)
+			(at 226.06 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14137,7 +15567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5a5a2bd-bbe6-45c3-9514-6cd9fd6a9e52")
-		(property "Reference" "MX33"
+		(property "Reference" "MX34"
 			(at 50.8 52.07 0)
 			(effects
 				(font
@@ -14189,7 +15619,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX33")
+					(reference "MX34")
 					(unit 1)
 				)
 			)
@@ -14205,7 +15635,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6985063-fca1-4164-a18a-6b37e91c78ce")
-		(property "Reference" "MX42"
+		(property "Reference" "MX43"
 			(at 165.1 52.07 0)
 			(effects
 				(font
@@ -14257,7 +15687,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX42")
+					(reference "MX43")
 					(unit 1)
 				)
 			)
@@ -14341,7 +15771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caeff98b-cb0a-45ab-b547-2ddc66c3750f")
-		(property "Reference" "D32"
+		(property "Reference" "D33"
 			(at 43.18 63.4999 90)
 			(effects
 				(font
@@ -14413,7 +15843,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D32")
+					(reference "D33")
 					(unit 1)
 				)
 			)
@@ -14429,7 +15859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd151f29-a05f-458c-a15d-36805f6554e0")
-		(property "Reference" "D47"
+		(property "Reference" "D48"
 			(at 43.18 81.2799 90)
 			(effects
 				(font
@@ -14501,7 +15931,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D47")
+					(reference "D48")
 					(unit 1)
 				)
 			)
@@ -14585,7 +16015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfc38af7-32ba-472e-80af-347c2831f176")
-		(property "Reference" "D33"
+		(property "Reference" "D34"
 			(at 55.88 63.4999 90)
 			(effects
 				(font
@@ -14657,7 +16087,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D33")
+					(reference "D34")
 					(unit 1)
 				)
 			)
@@ -14673,7 +16103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfc8b286-40b1-4665-b81a-160cd1e7653d")
-		(property "Reference" "MX69"
+		(property "Reference" "MX71"
 			(at 139.7 87.63 0)
 			(effects
 				(font
@@ -14725,7 +16155,74 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX69")
+					(reference "MX71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 254 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d06decdb-7b20-4418-8650-747e17e1c817")
+		(property "Reference" "MX87"
+			(at 254 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 254 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 254 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 254 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eba2250e-14b9-43f1-8aa2-27570953bf5b")
+		)
+		(pin "2"
+			(uuid "219a585a-574e-4629-9140-69ad9dba5ce7")
+		)
+		(instances
+			(project ""
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "MX87")
 					(unit 1)
 				)
 			)
@@ -14741,7 +16238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d33790aa-e030-48a2-8e68-8b501a8dfd75")
-		(property "Reference" "MX78"
+		(property "Reference" "MX80"
 			(at 101.6 105.41 0)
 			(effects
 				(font
@@ -14793,7 +16290,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX78")
+					(reference "MX80")
 					(unit 1)
 				)
 			)
@@ -14809,7 +16306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d51ceccf-5636-4696-938d-56bb58540c4d")
-		(property "Reference" "MX56"
+		(property "Reference" "MX58"
 			(at 152.4 69.85 0)
 			(effects
 				(font
@@ -14861,7 +16358,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX56")
+					(reference "MX58")
 					(unit 1)
 				)
 			)
@@ -14877,7 +16374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d67fc713-5b04-409e-be7d-a5d6b55d198d")
-		(property "Reference" "D72"
+		(property "Reference" "D73"
 			(at 182.88 99.0599 90)
 			(effects
 				(font
@@ -14949,7 +16446,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D72")
+					(reference "D73")
 					(unit 1)
 				)
 			)
@@ -14965,7 +16462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d72bd2f7-7c12-4920-84e6-104968ebc023")
-		(property "Reference" "D79"
+		(property "Reference" "D80"
 			(at 144.78 116.8399 90)
 			(effects
 				(font
@@ -15037,7 +16534,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D79")
+					(reference "D80")
 					(unit 1)
 				)
 			)
@@ -15053,7 +16550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7962abf-1f48-4c45-baae-c89a7ad3b4bf")
-		(property "Reference" "MX75"
+		(property "Reference" "MX77"
 			(at 25.4 105.41 0)
 			(effects
 				(font
@@ -15069,7 +16566,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.25u"
 			(at 25.4 113.03 0)
 			(effects
 				(font
@@ -15105,7 +16602,7 @@
 		(instances
 			(project ""
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX75")
+					(reference "MX77")
 					(unit 1)
 				)
 			)
@@ -15120,7 +16617,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7e01388-119d-4a82-85b9-f2b00a467e8e")
-		(property "Reference" "MX68"
+		(property "Reference" "MX70"
 			(at 127 87.63 0)
 			(effects
 				(font
@@ -15172,7 +16669,75 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX68")
+					(reference "MX70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_solder")
+		(at 213.36 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d912dde9-a0d6-45fd-a7d6-c586cb99d9b9")
+		(property "Reference" "MX30"
+			(at 213.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_solder"
+			(at 213.36 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
+			(at 213.36 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 213.36 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d81ec588-00dc-42b9-b814-d5c5cec63563")
+		)
+		(pin "1"
+			(uuid "0a802e06-6e1b-4865-a6af-c397823f42f9")
+		)
+		(instances
+			(project "kicad8"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
+					(reference "MX30")
 					(unit 1)
 				)
 			)
@@ -15344,7 +16909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddb2c993-570e-42f8-aa23-34005951c2f1")
-		(property "Reference" "D65"
+		(property "Reference" "D66"
 			(at 93.98 99.0599 90)
 			(effects
 				(font
@@ -15416,7 +16981,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D65")
+					(reference "D66")
 					(unit 1)
 				)
 			)
@@ -15432,7 +16997,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de792159-06fb-4672-8986-762da2e2232f")
-		(property "Reference" "MX61"
+		(property "Reference" "MX63"
 			(at 38.1 87.63 0)
 			(effects
 				(font
@@ -15484,7 +17049,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX61")
+					(reference "MX63")
 					(unit 1)
 				)
 			)
@@ -15500,7 +17065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "deb3cb7b-d34e-4439-84c7-4fe175eb6e4b")
-		(property "Reference" "D58"
+		(property "Reference" "D59"
 			(at 195.58 81.2799 90)
 			(effects
 				(font
@@ -15572,7 +17137,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D58")
+					(reference "D59")
 					(unit 1)
 				)
 			)
@@ -15588,7 +17153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e023fba3-4bc3-4caf-862a-e195727d5c12")
-		(property "Reference" "D39"
+		(property "Reference" "D40"
 			(at 132.08 63.4999 90)
 			(effects
 				(font
@@ -15660,7 +17225,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D39")
+					(reference "D40")
 					(unit 1)
 				)
 			)
@@ -15676,7 +17241,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0cce3d7-be13-4389-a0a9-4322b5cbe5c2")
-		(property "Reference" "MX21"
+		(property "Reference" "MX20"
 			(at 88.9 34.29 0)
 			(effects
 				(font
@@ -15728,7 +17293,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX21")
+					(reference "MX20")
 					(unit 1)
 				)
 			)
@@ -15809,9 +17374,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e57e89e1-45d2-408f-82b8-6f8396d53ca9")
-		(property "Reference" "D46"
+		(property "Reference" "D47"
 			(at 30.48 81.2799 90)
 			(effects
 				(font
@@ -15883,7 +17447,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D46")
+					(reference "D47")
 					(unit 1)
 				)
 			)
@@ -16055,7 +17619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e88078e8-0af7-49ae-9db2-8fd2c16fcb0a")
-		(property "Reference" "MX80"
+		(property "Reference" "MX82"
 			(at 152.4 105.41 0)
 			(effects
 				(font
@@ -16107,75 +17671,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX80")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 50.8 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8cf4f76-ba7a-4930-8fd2-c3dd179ca009")
-		(property "Reference" "MX77"
-			(at 50.8 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SW_HS"
-			(at 50.8 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
-			(at 50.8 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 50.8 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "def06960-be2e-4fb6-89b9-9d2dcd9d5017")
-		)
-		(pin "2"
-			(uuid "e4db19b2-7cb0-40e9-b0d7-6ae645323d8b")
-		)
-		(instances
-			(project "kicad8"
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX77")
+					(reference "MX82")
 					(unit 1)
 				)
 			)
@@ -16191,7 +17687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9954676-fef6-409a-8076-2da07078900f")
-		(property "Reference" "D34"
+		(property "Reference" "D35"
 			(at 68.58 63.4999 90)
 			(effects
 				(font
@@ -16263,75 +17759,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 38.1 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9c03fa9-389a-4eb8-ad3d-8b9fcdc5a6f1")
-		(property "Reference" "MX76"
-			(at 38.1 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SW_HS"
-			(at 38.1 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 38.1 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83fcbcaa-e8ef-473b-9aae-b879e61bedc9")
-		)
-		(pin "2"
-			(uuid "0d3cb07b-4a7b-4659-b840-439bf552f763")
-		)
-		(instances
-			(project "kicad8"
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX76")
+					(reference "D35")
 					(unit 1)
 				)
 			)
@@ -16346,7 +17774,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec09c8cf-f6a2-474a-b50e-2044b3a6dead")
-		(property "Reference" "MX82"
+		(property "Reference" "MX84"
 			(at 179.07 106.68 0)
 			(effects
 				(font
@@ -16398,7 +17826,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX82")
+					(reference "MX84")
 					(unit 1)
 				)
 			)
@@ -16414,7 +17842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef0c3ef1-5dc1-48d6-b380-1f388ab20d66")
-		(property "Reference" "D67"
+		(property "Reference" "D68"
 			(at 119.38 99.0599 90)
 			(effects
 				(font
@@ -16486,7 +17914,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D67")
+					(reference "D68")
 					(unit 1)
 				)
 			)
@@ -16502,7 +17930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efcd689e-12e2-44f5-9698-335e16e10e29")
-		(property "Reference" "D42"
+		(property "Reference" "D43"
 			(at 170.18 63.4999 90)
 			(effects
 				(font
@@ -16574,7 +18002,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D42")
+					(reference "D43")
 					(unit 1)
 				)
 			)
@@ -16678,7 +18106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1d7fe5a-46f0-4596-8b2b-f552e493d583")
-		(property "Reference" "D50"
+		(property "Reference" "D51"
 			(at 81.28 81.2799 90)
 			(effects
 				(font
@@ -16750,7 +18178,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D50")
+					(reference "D51")
 					(unit 1)
 				)
 			)
@@ -16766,7 +18194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f20e8f3b-2d03-41b9-98b7-a861af9fef9f")
-		(property "Reference" "MX47"
+		(property "Reference" "MX49"
 			(at 38.1 69.85 0)
 			(effects
 				(font
@@ -16818,7 +18246,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX47")
+					(reference "MX49")
 					(unit 1)
 				)
 			)
@@ -16834,7 +18262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2e2099f-0208-4de6-b50e-5dec112f3c24")
-		(property "Reference" "D70"
+		(property "Reference" "D71"
 			(at 157.48 99.0599 90)
 			(effects
 				(font
@@ -16906,7 +18334,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D70")
+					(reference "D71")
 					(unit 1)
 				)
 			)
@@ -16922,7 +18350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f50f93b2-f1cd-46fc-9ffb-948be12fc220")
-		(property "Reference" "D49"
+		(property "Reference" "D50"
 			(at 68.58 81.2799 90)
 			(effects
 				(font
@@ -16994,7 +18422,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D49")
+					(reference "D50")
 					(unit 1)
 				)
 			)
@@ -17002,7 +18430,7 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 25.4 77.47 0)
+		(at 12.7 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17010,8 +18438,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6619fe9-62c7-4d10-bb4a-1a5163e7cee5")
-		(property "Reference" "MX46"
-			(at 25.4 69.85 0)
+		(property "Reference" "MX47"
+			(at 12.7 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17019,7 +18447,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 25.4 72.39 0)
+			(at 12.7 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17027,7 +18455,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
-			(at 25.4 77.47 0)
+			(at 12.7 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17036,7 +18464,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 77.47 0)
+			(at 12.7 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17045,7 +18473,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 25.4 77.47 0)
+			(at 12.7 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17062,7 +18490,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX46")
+					(reference "MX47")
 					(unit 1)
 				)
 			)
@@ -17166,7 +18594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f763c0e8-8cb7-45ca-97af-9dda80191775")
-		(property "Reference" "MX31"
+		(property "Reference" "MX32"
 			(at 25.4 52.07 0)
 			(effects
 				(font
@@ -17182,7 +18610,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1.5u"
 			(at 25.4 59.69 0)
 			(effects
 				(font
@@ -17218,7 +18646,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX31")
+					(reference "MX32")
 					(unit 1)
 				)
 			)
@@ -17302,7 +18730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "faa163ee-6a6d-460d-82c9-f4a4e32b0ab2")
-		(property "Reference" "D31"
+		(property "Reference" "D32"
 			(at 30.48 63.4999 90)
 			(effects
 				(font
@@ -17374,7 +18802,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D31")
+					(reference "D32")
 					(unit 1)
 				)
 			)
@@ -17390,7 +18818,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc4f8c78-431b-4bb2-9d7c-29e62450de95")
-		(property "Reference" "MX60"
+		(property "Reference" "MX62"
 			(at 25.4 87.63 0)
 			(effects
 				(font
@@ -17442,7 +18870,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX60")
+					(reference "MX62")
 					(unit 1)
 				)
 			)
@@ -17458,7 +18886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff6b5eaf-d9c1-40b7-aed5-c6f7f2583e09")
-		(property "Reference" "D73"
+		(property "Reference" "D74"
 			(at 208.28 99.0599 90)
 			(effects
 				(font
@@ -17530,7 +18958,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D73")
+					(reference "D74")
 					(unit 1)
 				)
 			)

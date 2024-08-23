@@ -3794,7 +3794,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 30.48 30.48 0)
 			(effects
 				(font
@@ -4746,7 +4746,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1ea5c64-7a17-42c0-814c-83a68c68817e")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR017"
 			(at 34.29 26.67 0)
 			(effects
 				(font
@@ -4796,7 +4796,7 @@
 		(instances
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/5ce6faf6-3b88-47dd-8c67-c3e84c0ecbb7"
-					(reference "#PWR019")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
