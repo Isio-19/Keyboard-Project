@@ -745,175 +745,6 @@
 				)
 			)
 		)
-		(symbol "PCM_marbastlib-mx:MX_SW_solder"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "MX"
-				(at 3.048 1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "MX_SW_solder"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MX_SW_solder_0_1"
-				(circle
-					(center -1.1684 1.1684)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 2.54) (xy 2.54 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.016) (xy 2.032 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.143 -1.1938)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 2.54 0)
-					(length 0)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 0)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "PCM_marbastlib-mx:MX_stab"
 			(pin_names
 				(offset 1.016)
@@ -1686,12 +1517,6 @@
 		(uuid "031291a5-a579-4096-8688-220c1060f954")
 	)
 	(junction
-		(at 184.15 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "047dde64-b9ab-4264-b5b1-78ea279f9e9d")
-	)
-	(junction
 		(at 53.34 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1860,12 +1685,6 @@
 		(uuid "2f503693-61a4-4304-bedf-c4f16414ec58")
 	)
 	(junction
-		(at 204.47 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3007ddd8-75fe-4c82-9a90-65a75fe094f7")
-	)
-	(junction
 		(at 111.76 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1996,12 +1815,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a28e4a8-4f4f-4521-9d9f-cb761ec13850")
-	)
-	(junction
-		(at 204.47 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4a47d0f3-fa1e-4bda-ae32-bf63962ebafb")
 	)
 	(junction
 		(at 48.26 74.93)
@@ -2166,6 +1979,12 @@
 		(uuid "919810fc-73eb-4303-b9b4-290232ecceff")
 	)
 	(junction
+		(at 187.96 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94f94517-ad14-4d90-b3f5-5d134307ed1e")
+	)
+	(junction
 		(at 78.74 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2232,12 +2051,6 @@
 		(uuid "acb4c5c8-be83-4783-ae86-29d654dc37ae")
 	)
 	(junction
-		(at 199.39 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae2efb73-6a04-44a2-bdbe-6fb542f1353c")
-	)
-	(junction
 		(at 27.94 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2248,6 +2061,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2c74328-f03f-426a-8c82-4ac9e15136f4")
+	)
+	(junction
+		(at 193.04 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3d652cd-bae7-477f-9c4e-811d79b1ce05")
 	)
 	(junction
 		(at 180.34 49.53)
@@ -2775,7 +2594,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 50.8) (xy 180.34 49.53)
+			(xy 180.34 49.53) (xy 193.04 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2802,16 +2621,6 @@
 			(type default)
 		)
 		(uuid "1d33ae0f-7b3f-4250-90e4-839df291fe41")
-	)
-	(wire
-		(pts
-			(xy 199.39 53.34) (xy 187.96 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d6b9f28-6870-4915-8258-039056e6ac56")
 	)
 	(wire
 		(pts
@@ -2955,16 +2764,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 49.53) (xy 184.15 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "319177d9-7c0b-46b5-918a-91f45b3e71f0")
-	)
-	(wire
-		(pts
 			(xy 162.56 92.71) (xy 162.56 110.49)
 		)
 		(stroke
@@ -2985,7 +2784,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 85.09) (xy 184.15 85.09)
+			(xy 167.64 85.09) (xy 193.04 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3075,6 +2874,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 39.37) (xy 187.96 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f5cb3c4-e911-4017-a9b6-e013a656443c")
+	)
+	(wire
+		(pts
 			(xy 20.32 31.75) (xy 27.94 31.75)
 		)
 		(stroke
@@ -3085,7 +2894,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 39.37) (xy 227.33 57.15)
+			(xy 200.66 39.37) (xy 200.66 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3142,16 +2951,6 @@
 			(type default)
 		)
 		(uuid "49612d10-81b5-4de3-9406-ee9338a2bf1b")
-	)
-	(wire
-		(pts
-			(xy 199.39 39.37) (xy 199.39 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "497836bb-a69e-4f16-91f9-5044aed6831b")
 	)
 	(wire
 		(pts
@@ -3435,16 +3234,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 50.8) (xy 204.47 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b1924d4-2fef-4f67-8a41-dab70c152782")
-	)
-	(wire
-		(pts
 			(xy 162.56 74.93) (xy 162.56 92.71)
 		)
 		(stroke
@@ -3462,16 +3251,6 @@
 			(type default)
 		)
 		(uuid "7c4a4be4-2e8d-462b-8bb9-3003812188b1")
-	)
-	(wire
-		(pts
-			(xy 184.15 85.09) (xy 193.04 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d387438-cda5-4f11-ad5c-e2e08cf7f5df")
 	)
 	(wire
 		(pts
@@ -3552,16 +3331,6 @@
 			(type default)
 		)
 		(uuid "87a2a468-f529-4567-bc2b-3e59bc04cd02")
-	)
-	(wire
-		(pts
-			(xy 204.47 44.45) (xy 215.9 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87eba7da-e2db-418d-afd5-5becfa7700e9")
 	)
 	(wire
 		(pts
@@ -3705,33 +3474,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 49.53) (xy 184.15 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94b4ce34-2709-49ca-9310-5663b80763a6")
-	)
-	(wire
-		(pts
-			(xy 199.39 21.59) (xy 199.39 39.37)
+			(xy 187.96 21.59) (xy 187.96 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "98943136-49b6-4b36-a500-e7314dd7155e")
-	)
-	(wire
-		(pts
-			(xy 180.34 50.8) (xy 204.47 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98b57414-4e0e-41b9-8466-d1edd29e431e")
 	)
 	(wire
 		(pts
@@ -3945,16 +3694,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 53.34) (xy 187.96 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb65c2aa-20b3-47f0-b5bf-aec6bf4f6d36")
-	)
-	(wire
-		(pts
 			(xy 86.36 57.15) (xy 86.36 74.93)
 		)
 		(stroke
@@ -4022,16 +3761,6 @@
 			(type default)
 		)
 		(uuid "c32ec8d8-82ba-481e-a566-d9d2345e5726")
-	)
-	(wire
-		(pts
-			(xy 175.26 39.37) (xy 186.69 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4369acd-eda8-4ab7-a35c-f9d47a82c207")
 	)
 	(wire
 		(pts
@@ -4135,13 +3864,13 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 57.15) (xy 200.66 57.15)
+			(xy 193.04 49.53) (xy 205.74 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1728a15-cd36-46cb-96ac-e8fcdbdeafe5")
+		(uuid "d190b197-db7c-42bb-a63e-cd09d0fbddb0")
 	)
 	(wire
 		(pts
@@ -4172,16 +3901,6 @@
 			(type default)
 		)
 		(uuid "d2171a46-3dab-4692-9bd3-aa82277ea500")
-	)
-	(wire
-		(pts
-			(xy 199.39 21.59) (xy 187.96 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d34fc223-ab59-49e6-a53f-de74115e55f0")
 	)
 	(wire
 		(pts
@@ -4242,16 +3961,6 @@
 			(type default)
 		)
 		(uuid "df6333ac-2644-4176-a9f8-385e3e631aa9")
-	)
-	(wire
-		(pts
-			(xy 231.14 39.37) (xy 227.33 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e10e01cb-43bf-48cd-a240-6836c9bd6e96")
 	)
 	(wire
 		(pts
@@ -4425,16 +4134,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 39.37) (xy 210.82 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5c5f10f-03aa-490b-8e4e-ccd927c15520")
-	)
-	(wire
-		(pts
 			(xy 193.04 85.09) (xy 205.74 85.09)
 		)
 		(stroke
@@ -4522,16 +4221,6 @@
 			(type default)
 		)
 		(uuid "fc340ed3-c18c-4071-abbc-0e9d603c7814")
-	)
-	(wire
-		(pts
-			(xy 204.47 49.53) (xy 236.22 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffffbc03-e72b-4b53-bff7-399aacda329f")
 	)
 	(global_label "row0"
 		(shape input)
@@ -5778,7 +5467,7 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 233.68 41.91 0)
+		(at 203.2 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5786,7 +5475,7 @@
 		(dnp no)
 		(uuid "076dfdca-eee9-4896-bb79-23c4467a898a")
 		(property "Reference" "MX31"
-			(at 233.68 34.29 0)
+			(at 203.2 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5794,7 +5483,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 233.68 36.83 0)
+			(at 203.2 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5802,7 +5491,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
-			(at 233.68 41.91 0)
+			(at 203.2 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +5500,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 41.91 0)
+			(at 203.2 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5820,7 +5509,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 233.68 41.91 0)
+			(at 203.2 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6870,7 +6559,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 236.22 46.99 90)
+		(at 205.74 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6879,7 +6568,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a813614-cb8d-44f3-99c8-f39bdab89afe")
 		(property "Reference" "D31"
-			(at 238.76 45.7199 90)
+			(at 208.28 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6888,7 +6577,7 @@
 			)
 		)
 		(property "Value" "D_Small"
-			(at 238.76 48.2599 90)
+			(at 208.28 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6897,7 +6586,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 236.22 46.99 90)
+			(at 205.74 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6906,7 +6595,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 46.99 90)
+			(at 205.74 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6915,7 +6604,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 236.22 46.99 0)
+			(at 205.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6924,7 +6613,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 236.22 46.99 0)
+			(at 205.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6933,7 +6622,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 236.22 46.99 0)
+			(at 205.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8541,7 +8230,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 204.47 46.99 90)
+		(at 193.04 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8550,7 +8239,7 @@
 		(fields_autoplaced yes)
 		(uuid "332b6f88-2cec-4ec8-83a7-a980bb0b117d")
 		(property "Reference" "D30"
-			(at 207.01 45.7199 90)
+			(at 195.58 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8559,7 +8248,7 @@
 			)
 		)
 		(property "Value" "D_Small"
-			(at 207.01 48.2599 90)
+			(at 195.58 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8568,7 +8257,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 204.47 46.99 90)
+			(at 193.04 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8577,7 +8266,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 46.99 90)
+			(at 193.04 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8586,7 +8275,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 204.47 46.99 0)
+			(at 193.04 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8595,7 +8284,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 204.47 46.99 0)
+			(at 193.04 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8604,7 +8293,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 204.47 46.99 0)
+			(at 193.04 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9537,7 +9226,7 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 201.93 41.91 0)
+		(at 190.5 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9545,7 +9234,7 @@
 		(dnp no)
 		(uuid "44780f82-4a08-47fe-9f60-3c2bfb285ae6")
 		(property "Reference" "MX29"
-			(at 201.93 34.29 0)
+			(at 190.5 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9553,7 +9242,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 201.93 36.83 0)
+			(at 190.5 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9561,7 +9250,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
-			(at 201.93 41.91 0)
+			(at 190.5 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9570,7 +9259,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 41.91 0)
+			(at 190.5 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9579,7 +9268,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 201.93 41.91 0)
+			(at 190.5 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13995,74 +13684,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SW_solder")
-		(at 189.23 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4e4a4ac-1e02-42a1-98d7-d7582db88c64")
-		(property "Reference" "MX28"
-			(at 189.23 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SW_solder"
-			(at 189.23 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
-			(at 189.23 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 189.23 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 189.23 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "388341f2-75c4-449b-ae8b-b6654dfc7070")
-		)
-		(pin "1"
-			(uuid "3f10060d-78a9-4be7-a55f-7276f5b447b0")
-		)
-		(instances
-			(project "kicad8"
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Small")
 		(at 180.34 46.99 90)
 		(unit 1)
@@ -14456,94 +14077,6 @@
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
 					(reference "MX75")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 191.77 46.99 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad9abdbd-076c-4860-bb3b-56040f8c95c5")
-		(property "Reference" "D29"
-			(at 194.31 45.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 194.31 48.2599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 191.77 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 191.77 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 191.77 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 191.77 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a135a7da-974f-4537-bdc0-e0d2dd1f7da4")
-		)
-		(pin "1"
-			(uuid "cb854bf4-c8b0-4ae5-a73f-91314b0261ba")
-		)
-		(instances
-			(project "kicad8"
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "D29")
 					(unit 1)
 				)
 			)
@@ -16670,74 +16203,6 @@
 			(project "kicad8"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
 					(reference "MX70")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SW_solder")
-		(at 213.36 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d912dde9-a0d6-45fd-a7d6-c586cb99d9b9")
-		(property "Reference" "MX30"
-			(at 213.36 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SW_solder"
-			(at 213.36 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:SW_MX_1u"
-			(at 213.36 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 213.36 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d81ec588-00dc-42b9-b814-d5c5cec63563")
-		)
-		(pin "1"
-			(uuid "0a802e06-6e1b-4865-a6af-c397823f42f9")
-		)
-		(instances
-			(project "kicad8"
-				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/2b97a220-2f1a-429f-8815-0fa3b3b8491d"
-					(reference "MX30")
 					(unit 1)
 				)
 			)
