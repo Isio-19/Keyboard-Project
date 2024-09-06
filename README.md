@@ -8,4 +8,4 @@ Kicad file for a keyboard with these features:
 - ANSI enter
 - Option between stepped and regular caps lock
 - Option between a knob (Skyloong) or a switch
-  
+- Option between a full size space bar (6.25u) or split spacebars (2u + 2.25u + 2u)
