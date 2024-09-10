@@ -11,5 +11,6 @@ Kicad file for a keyboard with these features:
 - Option between a full size space bar (6.25u) or split spacebars (2u + 2.25u + 2u)
 
 To-do:
-
-[] Check if the capacitors, resistors and diodes have the right footprints
+- [] Check if the capacitors, resistors and diodes have the right footprints
+- [] Make a wireless version
+- [] Make an Alice version
